@@ -1,18 +1,296 @@
-extends base
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>achive_a: 2017-6 | 涯无凌</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="涯无凌的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="涯无凌">
+<meta property="og:url" content="http://blog.ywulin.com/archives/2017/06/index.html">
+<meta property="og:site_name" content="涯无凌">
+<meta property="og:description" content="涯无凌的个人博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="涯无凌">
+<meta name="twitter:description" content="涯无凌的个人博客">
+    
+    
+      <link rel="icon" href="/favicon.ico" >
+    
+    
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" >
+    
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_350yjxn0ozbprpb9.css">
+    <link rel="stylesheet" href="/css/Ani.css">
+    <link rel="stylesheet" href="/css/github-markdown.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d07bed116b18b9fa55ad47db97b8c8d0";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+  </head>
 
-block title
-  title= __('archive') + ' | ' + config.title
-block content
-  .post
-    .post-archive
-      .archive-wrap
-        each posts, year in _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')})
-          h2= -year
-          ul.listing
-            for post in posts
-                li
-                  a(href=url_for(post.path), title=post.title)
-                    span.date= post.date.format(theme.date_formats.archive)
-                    span.tite
-                      +title(post)              
-  include _partial/paginator.jade
+<body>
+  <div id="bg">
+  <img src="/image/bg.jpg"/>
+</div>
+
+  <div id="container">
+    <header id="header">
+  <nav class="header-nav">
+    
+      <a class="nav-item js-transition-hover" href="/">
+        <span>首页</span>
+        <i class="nav-item-bottom js-transition-bottom"></i>
+      </a>
+    
+      <a class="nav-item js-transition-hover" href="/archives">
+        <span>归档</span>
+        <i class="nav-item-bottom js-transition-bottom"></i>
+      </a>
+    
+      <a class="nav-item js-transition-hover" href="/about">
+        <span>关于</span>
+        <i class="nav-item-bottom js-transition-bottom"></i>
+      </a>
+    
+    
+  </nav>
+  <div class="header-desc">
+    <h1 class="author">涯无凌</h1>
+    
+      <h2 class="author-subtitle">一枚渣渣前端工程师</h2>
+    
+  </div>
+</header>
+
+    <div id="content">
+      
+        <section id="main">
+          
+  <div class="archive-label">
+    <span class="archive-label-txt">2017年 6月</span>
+    <span>的文章</span>
+  </div>
+
+
+  <div class="post">
+  
+    <h2 class="post-title">
+      <a href="/201706251602.html">201706251602</a>
+    </h2>
+  
+  <div class="post-meta">
+    <div class="post-date">
+      <i class="iconfont icon-riqi"></i>
+      <span>2017-06-25</span>
+    </div>
+    
+      <span class="post-meta-line">|</span>
+      <div class="post-category">
+        
+          <div class="post-category-item">
+            <i class="iconfont icon-fenlei"></i>
+            <a href="/categories/自动化构建工具/">自动化构建工具</a>
+          </div>
+        
+      </div>
+    
+  </div>
+  <div class="post-content">
+    
+      <p>Gulp.js 是一个自动化构建工具,开发者可以使用它在项目开发过程中自动执行常见任务。在这里介绍了gulp的入门，插件和gulpfile.js配置文件。</p>
+    
+  </div>
+  <div class="post-footer">
+    
+      <div class="post-tags">
+        
+          <div class="post-tags-item">
+            <i class="iconfont icon-msnui-tag"></i>
+            <a href="/tags/gulp/">gulp</a>
+          </div>
+        
+      </div>
+    
+    <div class="post-readmore">
+      <a href="/201706251602.html">阅读更多</a>
+    </div>
+  </div>
+</div>
+
+
+  <div class="post">
+  
+    <h2 class="post-title">
+      <a href="/hello-world.html">Hello World</a>
+    </h2>
+  
+  <div class="post-meta">
+    <div class="post-date">
+      <i class="iconfont icon-riqi"></i>
+      <span>2017-06-22</span>
+    </div>
+    
+  </div>
+  <div class="post-content">
+    
+      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+    
+  </div>
+  <div class="post-footer">
+    
+    <div class="post-readmore">
+      <a href="/hello-world.html">阅读更多</a>
+    </div>
+  </div>
+</div>
+
+
+<div id="page-list">
+  <span class="page-number current">1</span>
+</div>
+
+        </section>
+        <div id="toolbar">
+          
+  <div class="widget-item">
+  <div id="search-mask" class="hide"></div>
+  <div class="search-block js-transition-click">
+    <input class="search-input" id="search-key" type="text" placeholder="搜索文章">
+    <span id="search-btn" class="iconfont icon-sousuo_sousuo"></span>
+    <i class="search-bottom"></i>
+    <i class="search-transition-line js-transition-bottom"></i>
+    <div id="search-result" class="hide">
+      <div class="search-result-content"></div>
+    </div>
+    <div class="hide">
+      <template id="search-tpl">
+        <div class="search-result-item">
+          <a href="/{{path}}" title="{{title}}">
+            <div class="item-title">{{title}}</div>
+            <div class="item-date">{{date}}</div>
+            <div class="tags">{{tags}}</div>
+          </a>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-wenzhang"></i>
+      <span>最新文章</span>
+    </h3>
+    <ul class="widget">
+      
+        <li>
+          <a href="/201706251602.html">201706251602</a>
+        </li>
+      
+        <li>
+          <a href="/hello-world.html">Hello World</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-fenlei"></i>
+      <span>分类</span>
+    </h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/自动化构建工具/">自动化构建工具</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-msnui-tag"></i>
+      <span>标签</span>
+    </h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-book2"></i>
+      <span>归档</span>
+    </h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+
+
+        </div>
+      
+    </div>
+    
+      <a id="to-top" title="回到顶部">
+  <div class="to-top-content js-transition-hover">
+    <div class="to-top-bg js-transition-bottom"></div>
+    <span class="iconfont icon-xiangshang"></span>
+  </div>
+</a>
+
+    
+    <div id="footer">
+  
+    <div class="footer-count">
+      <span id="busuanzi_container_site_pv">
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+      </span>
+    </div>
+  
+  <div class="footer-info">
+    <p>Copyright &copy; <a href="http://blog.ywulin.com/archives/index.html">涯无凌（yawuling）</a>.</p>
+    <p>Power by <a href="https://hexo.io/">Hexo</a></P>
+  </div>
+</div>
+
+  </div>
+  <script src="/js/jquery-3.2.1.min.js"></script>
+  
+    <script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  <script src="/js/Ani.js"></script>
+  
+    <script src="/js/search.js"></script>
+  
+</body>
+</html>
