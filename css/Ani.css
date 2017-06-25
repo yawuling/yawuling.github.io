@@ -21,6 +21,7 @@ body {
   font-size: 14px;
   color: #333;
   background: #fbfbfb;
+  font-family: '微软雅黑', tahoma, arial, 'Hiragino Sans GB', "宋体", sans-serif;
 }
 #bg {
   position: absolute;
@@ -245,9 +246,8 @@ body {
   transition: all 0.3s;
 }
 #main .post-readmore a:hover {
-  background-color: #1296db;
   border: 1px solid #1296db;
-  color: #fff;
+  color: #1296db;
 }
 #main #page-list {
   margin-top: 50px;
@@ -267,7 +267,8 @@ body {
   transition: all 0.5s;
 }
 #main #page-list a:hover {
-  border: 1px solid #666;
+  border: 1px solid #1296db;
+  color: #1296db;
 }
 #main #page-list .prev,
 #main #page-list .next {
