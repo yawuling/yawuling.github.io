@@ -399,8 +399,13 @@ body {
   color: #999;
   font-size: 12px;
 }
-#post .post-footer .bdsharebuttonbox {
-  margin-top: 20px;
+#post .post-footer .foot-share {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
 }
 #toolbar {
   display: inline-block;
