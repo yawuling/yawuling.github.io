@@ -14,7 +14,7 @@
 <meta property="og:description" content="用vue来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，vue-router有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的framework7+vue来做webapp。framework7-vue出的时间不长，官网上描述不是特别详细，所以在这里使用vue+framework7-vue+framework7来重绘官网的demo。">
 <meta property="og:image" content="http://oqn7d0y3s.bkt.clouddn.com/20170714152602.jpg">
 <meta property="og:image" content="http://oqn7d0y3s.bkt.clouddn.com/20170714152601.jpg">
-<meta property="og:updated_time" content="2017-07-17T09:17:43.547Z">
+<meta property="og:updated_time" content="2017-07-17T09:20:01.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Framework7+Framework7-vue+vue踩坑记（一）">
 <meta name="twitter:description" content="用vue来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，vue-router有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的framework7+vue来做webapp。framework7-vue出的时间不长，官网上描述不是特别详细，所以在这里使用vue+framework7-vue+framework7来重绘官网的demo。">
@@ -115,7 +115,7 @@
 <h6 id="2、Autocomplete功能实现"><a href="#2、Autocomplete功能实现" class="headerlink" title="2、Autocomplete功能实现"></a>2、Autocomplete功能实现</h6><blockquote>
 <p><code>framework7-vue</code>没有<code>Autocomplete</code>组件，需要自己手动实现，<code>Autocomplete</code>主要通过js进行配置和初始化，自定义选项较多。<br><code>Autocomplete</code>需要使用到<code>f7-list</code>组件作为输入的容器，代码如下：</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;f7-list form&gt;</div><div class="line">  &lt;f7-list-item&gt;</div><div class="line">    &lt;f7-label&gt;Fruit&lt;/f7-label&gt;</div><div class="line">    &lt;f7-input type="text" placeholder="Fruit" id="autocomplete-dropdown"&gt;&lt;/f7-input&gt;</div><div class="line">  &lt;/f7-list-item&gt;</div><div class="line">&lt;/f7-list&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">f7-list</span> <span class="attr">form</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-label</span>&gt;</span>Fruit<span class="tag">&lt;/<span class="name">f7-label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Fruit"</span> <span class="attr">id</span>=<span class="string">"autocomplete-dropdown"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-input</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">f7-list</span>&gt;</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>此外还需要在<code>vue</code>的生命周期<code>mounted</code>中进行初始化<br>tips：不能在<code>created</code>中进行初始化，这时候模板尚未编译挂载，无法将插件绑定到dom上</p>
 </blockquote>
@@ -184,7 +184,7 @@
       <div class="copyright-desc">
   <div>
     <span>本文地址：</span>
-    <a href="http://blog.ywulin.com/201706251602.html">http://blog.ywulin.com/201706251602.html</a>
+    <a href="http://blog.ywulin.com/201707141526.html">http://blog.ywulin.com/201707141526.html</a>
   </div>
   <div>转载请注明出处，谢谢！</div>
 </div>
@@ -378,7 +378,7 @@
     </div>
   
   <div class="footer-info">
-    <p>Copyright &copy; <a href="http://blog.ywulin.com/201706251602.html">涯无凌（yawuling）</a>.</p>
+    <p>Copyright &copy; <a href="http://blog.ywulin.com/201707141526.html">涯无凌（yawuling）</a>.</p>
     <p>Power by <a href="https://hexo.io/">Hexo.</a></p>
     <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages.</a></p>
   </div>
