@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Framework7+Framework7-vue+vue踩坑记（一） | 涯无凌</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="用vue来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，vue-router有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的framework7+vue来做webapp。framework7-vue出的时间不长，官网上描述不是特别详细，所以在这里使用vue+framework7-vue+framework7来重绘官网的demo。">
+<meta name="keywords" content="vue,framework7">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Framework7+Framework7-vue+vue踩坑记（一）">
+<meta property="og:url" content="http://blog.ywulin.com/201707141526.html">
+<meta property="og:site_name" content="涯无凌">
+<meta property="og:description" content="用vue来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，vue-router有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的framework7+vue来做webapp。framework7-vue出的时间不长，官网上描述不是特别详细，所以在这里使用vue+framework7-vue+framework7来重绘官网的demo。">
+<meta property="og:image" content="http://oqn7d0y3s.bkt.clouddn.com/20170714152602.jpg">
+<meta property="og:image" content="http://oqn7d0y3s.bkt.clouddn.com/20170714152601.jpg">
+<meta property="og:updated_time" content="2017-07-17T09:17:43.547Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Framework7+Framework7-vue+vue踩坑记（一）">
+<meta name="twitter:description" content="用vue来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，vue-router有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的framework7+vue来做webapp。framework7-vue出的时间不长，官网上描述不是特别详细，所以在这里使用vue+framework7-vue+framework7来重绘官网的demo。">
+<meta name="twitter:image" content="http://oqn7d0y3s.bkt.clouddn.com/20170714152602.jpg">
+    
+    
+      <link rel="icon" href="/favicon.ico" >
+    
+    
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" >
+    
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_350yjxn0ozbprpb9.css">
+    <link rel="stylesheet" href="/css/Ani.css">
+    <link rel="stylesheet" href="/css/github-markdown.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d07bed116b18b9fa55ad47db97b8c8d0";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+  </head>
+
+<body>
+  <div id="bg">
+  <img src="/image/bg.jpg"/>
+</div>
+
+  <div id="container">
+    <header id="header">
+  <nav class="header-nav">
+    
+      <a class="nav-item js-transition-hover" href="/">
+        <span>首页</span>
+        <i class="nav-item-bottom js-transition-bottom"></i>
+      </a>
+    
+      <a class="nav-item js-transition-hover" href="/archives">
+        <span>归档</span>
+        <i class="nav-item-bottom js-transition-bottom"></i>
+      </a>
+    
+    
+  </nav>
+  <div class="header-desc">
+    <h1 class="author">涯无凌</h1>
+    
+      <h2 class="author-subtitle">一枚渣渣前端工程师</h2>
+    
+  </div>
+</header>
+
+    <div id="content">
+      
+        <section id="main">
+          <div id="post">
+  <div class="post-header">
+    <div class="post-title">Framework7+Framework7-vue+vue踩坑记（一）</div>
+    <div class="post-meta-c">
+      <div class="post-meta-l">
+        <div class="post-date">
+          <i class="iconfont icon-riqi"></i>
+          <span>2017-07-14</span>
+        </div>
+        
+          <span class="post-meta-line">|</span>
+          <div class="post-category">
+            
+              <div class="post-category-item">
+                <i class="iconfont icon-fenlei"></i>
+                <a href="/categories/webapp/">webapp</a>
+              </div>
+            
+          </div>
+        
+      </div>
+      
+        <div>
+          <i class="iconfont icon-yuedu"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </div>
+      
+    </div>
+  </div>
+  <div class="markdown-body">
+    <p>用<code>vue</code>来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，<code>vue-router</code>有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的<code>framework7</code>+<code>vue</code>来做webapp。<code>framework7-vue</code>出的时间不长，官网上描述不是特别详细，所以在这里使用<code>vue</code>+<code>framework7-vue</code>+<code>framework7</code>来重绘官网的demo。</p>
+<a id="more"></a>
+<hr>
+<p>网上关于<code>framework7-vue</code>的博客基本没有，所以我决定来踩波坑，以下是我在使用<code>framework7-vue</code>时遇到的一些需要注意的点</p>
+<h6 id="1、this指向"><a href="#1、this指向" class="headerlink" title="1、this指向"></a>1、<code>this</code>指向</h6><blockquote>
+<p>在定时器和<code>framework7</code>的api回调函数中，<code>this</code>会被修改指向其他作用域，在定时器或回调api调用之前定义一个变量保存指向<code>vue</code>作用域的<code>this</code></p>
+</blockquote>
+<h6 id="2、Autocomplete功能实现"><a href="#2、Autocomplete功能实现" class="headerlink" title="2、Autocomplete功能实现"></a>2、Autocomplete功能实现</h6><blockquote>
+<p><code>framework7-vue</code>没有<code>Autocomplete</code>组件，需要自己手动实现，<code>Autocomplete</code>主要通过js进行配置和初始化，自定义选项较多。<br><code>Autocomplete</code>需要使用到<code>f7-list</code>组件作为输入的容器，代码如下：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;f7-list form&gt;</div><div class="line">  &lt;f7-list-item&gt;</div><div class="line">    &lt;f7-label&gt;Fruit&lt;/f7-label&gt;</div><div class="line">    &lt;f7-input type="text" placeholder="Fruit" id="autocomplete-dropdown"&gt;&lt;/f7-input&gt;</div><div class="line">  &lt;/f7-list-item&gt;</div><div class="line">&lt;/f7-list&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>此外还需要在<code>vue</code>的生命周期<code>mounted</code>中进行初始化<br>tips：不能在<code>created</code>中进行初始化，这时候模板尚未编译挂载，无法将插件绑定到dom上</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">data() &#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    <span class="attr">fruits</span>: (<span class="string">'Apple Apricot Avocado Banana Melon Orange Peach Pear Pineapple'</span>).split(<span class="string">' '</span>)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">mounted() &#123;</div><div class="line">  <span class="comment">//注意，这里在插件初始化中this并非指向Vue实例的</span></div><div class="line">  <span class="keyword">let</span> fruits = <span class="keyword">this</span>.fruits;</div><div class="line">  <span class="keyword">let</span> autocompleteDropdownSimple = <span class="built_in">window</span>.f7.autocomplete(&#123;</div><div class="line">    <span class="attr">input</span>: <span class="string">'#autocomplete-dropdown'</span>,</div><div class="line">    <span class="attr">openIn</span>: <span class="string">'dropdown'</span>,</div><div class="line">    <span class="attr">source</span>: <span class="function"><span class="keyword">function</span> (<span class="params">autocomplete, query, render</span>) </span>&#123;</div><div class="line">      <span class="keyword">let</span> results = []</div><div class="line">      <span class="keyword">if</span> (query.length === <span class="number">0</span>) &#123;</div><div class="line">        render(results)</div><div class="line">        <span class="keyword">return</span></div><div class="line">      &#125;</div><div class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; fruits.length; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (fruits[i].toLowerCase().indexOf(query.toLowerCase()) &gt;= <span class="number">0</span>) &#123;</div><div class="line">          results.push(fruits[i])</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">      render(results)</div><div class="line">    &#125;</div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>其他类型的选项请参照官网原生文档实现：<a href="http://docs.framework7.cn/Index/autocomplete.html" target="_blank" rel="external">http://docs.framework7.cn/Index/autocomplete.html</a></p>
+</blockquote>
+<h6 id="3、this-amp-this-Dom7-中无jsonp请求"><a href="#3、this-amp-this-Dom7-中无jsonp请求" class="headerlink" title="3、this.$$ &amp; this.Dom7 中无jsonp请求"></a>3、this.$$ &amp; this.Dom7 中无<code>jsonp</code>请求</h6><blockquote>
+<p>在this.$$中无jsonp请求，若要使用jsonp，可安装<code>vue-resource</code>（不过该插件作者已宣布不再更新），用法一样</p>
+</blockquote>
+<h6 id="4、Calendar-Datepicker"><a href="#4、Calendar-Datepicker" class="headerlink" title="4、Calendar / Datepicker"></a>4、Calendar / Datepicker</h6><blockquote>
+<p><code>framework7-vue</code>没有<code>Calendar / Datepicker</code>的组件，需要手动实现，跟Autocomplete一样，代码如下</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;f7-page&gt;</div><div class="line">    &lt;f7-list form&gt;</div><div class="line">      &lt;f7-list-item&gt;</div><div class="line">        &lt;f7-input type="text" placeholder="Select date" readonly id="calendar-disabled"&gt;&lt;/f7-input&gt;</div><div class="line">      &lt;/f7-list-item&gt;</div><div class="line">    &lt;/f7-list&gt;</div><div class="line">  &lt;/f7-page&gt;</div><div class="line">&lt;/template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">export default&#123;</div><div class="line">  mounted () &#123;</div><div class="line">    let calendarDefault = this.$f7.calendar(&#123;</div><div class="line">      input: '#calendar-default'</div><div class="line">    &#125;)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h6 id="5、Contacts"><a href="#5、Contacts" class="headerlink" title="5、Contacts"></a>5、Contacts</h6><blockquote>
+<p><code>framework7-vue</code>中有<code>contacts-list</code>组件，其<code>.list.group-title</code>在谷歌浏览器调试时，<code>position: sticky</code>中top是相对于viewport定位的，所以滚动后处于浏览器顶部，被navbar遮住，但在手机上是正常显示的，其top是相对于<code>.page-content</code>定位的</p>
+</blockquote>
+<h6 id="6、层级路由"><a href="#6、层级路由" class="headerlink" title="6、层级路由"></a>6、层级路由</h6><blockquote>
+<p><code>framework7-vue</code>在本文章撰写时除了在同页面Tab中有层级路由外，没有实现页面间的层级路由，跟<code>vue-router</code>不一样，要实现页面间的层级跳转，路由的写法跟平时写法一致，直接跳转即可，如下</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">    <span class="attr">path</span>: <span class="string">'/floatingAction/'</span>,</div><div class="line">    <span class="attr">component</span>: <span class="built_in">require</span>(<span class="string">'./pages/floatingAction/floatingAction.vue'</span>),</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">	<span class="comment">//我这里为了显示出层级关系，将其上一级页面的路由也包含进去，事实上是可以不用这么做的</span></div><div class="line">    path: <span class="string">'/floatingAction/staticFloating/'</span>,</div><div class="line">    <span class="attr">component</span>: <span class="built_in">require</span>(<span class="string">'./pages/floatingAction/staticFloating.vue'</span>)</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="attr">path</span>: <span class="string">'/floatingAction/speedDial/'</span>,</div><div class="line">    <span class="attr">component</span>: <span class="built_in">require</span>(<span class="string">'./pages/floatingAction/speedDial.vue'</span>)</div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<h6 id="7、f7-input-type-”select”"><a href="#7、f7-input-type-”select”" class="headerlink" title="7、f7-input: type=”select”"></a>7、f7-input: type=”select”</h6><blockquote>
+<p><code>f7-input</code>中设置<code>type=&quot;select&quot;</code>，不会有默认选中项，需要在<code>f7-input</code>中绑定<code>v-model=&quot;selected&quot;</code>，而给<code>option</code>设置<code>selected</code>属性是不会显示选中项的</p>
+</blockquote>
+<h6 id="8、无限滚动Infinite-Scroll"><a href="#8、无限滚动Infinite-Scroll" class="headerlink" title="8、无限滚动Infinite Scroll"></a>8、无限滚动Infinite Scroll</h6><blockquote>
+<p>无限滚动的实现是在<code>f7-page</code>中加上<code>infinite-scroll</code>，滚动事件为<code>@infinite=&quot;doSomething&quot;</code>，页面每次变更都需要重新刷新一次浏览器，否则<code>infinite</code>事件不会绑定，<code>infinite-scroll</code>是在<code>page:init</code>即页面初始化时初始化的，而热加载不会重新执行一遍<code>page:init</code>。以下是代码实现：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;f7-page infinite-scroll @infinite="onInfiniteScroll"&gt;</div><div class="line">    &lt;f7-navbar title="Infinite Scroll" back-link="返回" sliding&gt;</div><div class="line">      &lt;f7-nav-right&gt;</div><div class="line">        &lt;f7-link icon="icon icon-bars" open-panel="left"&gt;&lt;/f7-link&gt;</div><div class="line">      &lt;/f7-nav-right&gt;</div><div class="line">    &lt;/f7-navbar&gt;</div><div class="line">    &lt;f7-block-title&gt;SCROLL BOTTOM&lt;/f7-block-title&gt;</div><div class="line">    &lt;f7-list&gt;</div><div class="line">      &lt;f7-list-item v-for="item in items" :title="'Item ' + item"&gt;&lt;/f7-list-item&gt;</div><div class="line">    &lt;/f7-list&gt;</div><div class="line">  &lt;/f7-page&gt;</div><div class="line">&lt;/template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">export default &#123;</div><div class="line">  data () &#123;</div><div class="line">    return &#123;</div><div class="line">      items: 20,</div><div class="line">      loading: false,</div><div class="line">      maxLength: 60</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  methods: &#123;</div><div class="line">    onInfiniteScroll: function () &#123;</div><div class="line">      if (this.loading) &#123;</div><div class="line">        return;</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      this.loading = true;</div><div class="line"></div><div class="line">      let _this = this;</div><div class="line"></div><div class="line">      setTimeout(function () &#123;</div><div class="line">        _this.loading = false;</div><div class="line"></div><div class="line">        if (_this.items &gt;= _this.maxLength) &#123;</div><div class="line">          _this.$f7.detachInfiniteScroll(_this.$$('.infinite-scroll'))</div><div class="line">          _this.$$('.infinite-scroll-preloader').remove()</div><div class="line">          return</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        _this.items += 20;</div><div class="line">      &#125;, 1000)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;style lang="less"&gt;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<h6 id="9、f7-list的灵活性"><a href="#9、f7-list的灵活性" class="headerlink" title="9、f7-list的灵活性"></a>9、<code>f7-list</code>的灵活性</h6><blockquote>
+<p><code>f7-list</code>的比较灵活，严格来说应该是<code>f7-list-item</code>比较灵活，自由度高，该组件在设计时添加了不少slot选项来分发内容</p>
+</blockquote>
+<p><img src="http://oqn7d0y3s.bkt.clouddn.com/20170714152602.jpg" alt="f7-list-item的slots分发"></p>
+<blockquote>
+<p>灵活运用slots可以实现各种列表效果，如以下效果：</p>
+</blockquote>
+<center><img src="http://oqn7d0y3s.bkt.clouddn.com/20170714152601.jpg" alt="f7-list-item的slots分发效果"></center>
+
+<blockquote>
+<p>代码的实现如下</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;f7-list-item title=<span class="string">"No icons here"</span>&gt;</div><div class="line">	&lt;ul slot="root"&gt;</div><div class="line">		&lt;f7-list-item</div><div class="line">			link="#"</div><div class="line">			media="&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</div><div class="line">			title="Ivan Petrov"</div><div class="line">			after="CEO"</div><div class="line">		&gt;&lt;/f7-list-item&gt;</div><div class="line">		&lt;f7-list-item</div><div class="line">			link="#"</div><div class="line">			media="&lt;i class='icon icon-f7'&gt;&lt;/i&gt;&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</div><div class="line">			title="Two icons here"</div><div class="line">		&gt;&lt;/f7-list-item&gt;</div><div class="line">		&lt;f7-list-item title="No icons here"&gt;&lt;/f7-list-item&gt;</div><div class="line">		&lt;f7-list-item</div><div class="line">			link="#"</div><div class="line">			media="&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</div><div class="line">			title="Ultra long text goes here, no, it is really really long"</div><div class="line">		&gt;&lt;/f7-list-item&gt;</div><div class="line">		&lt;f7-list-item</div><div class="line">			media="&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</div><div class="line">			title="With switch"&gt;</div><div class="line">			&lt;f7-input type='switch' slot="after"&gt;&lt;/f7-input&gt;</div><div class="line">		&lt;/f7-list-item&gt;</div><div class="line">	&lt;/ul&gt;</div><div class="line">&lt;/f7-list-item&gt;</div></pre></td></tr></table></figure>
+<h6 id="10、-router"><a href="#10、-router" class="headerlink" title="10、$router"></a>10、$router</h6><blockquote>
+<p>要在<code>javascript</code>中使用路由<code>$router</code>，用法为<code>this.$router</code>，<code>$router</code>是保存在<code>vue</code>作用域中的</p>
+</blockquote>
+<hr>
+<p><code>framework7-vue</code>的注意点目前就写到这，后面继续更新<br>基于<code>framework7-vue</code>实现的官方实例 <a href="https://github.com/yawuling/vue-framework7" target="_blank" rel="external">vue-framework7</a>，持续更新中，欢迎star</p>
+
+  </div>
+  <div class="post-footer">
+    
+      <div class="footer-post-tags">
+        
+          <div class="post-tags-item">
+            <i class="iconfont icon-msnui-tag"></i>
+            <a href="/tags/vue/">vue</a>
+          </div>
+        
+          <div class="post-tags-item">
+            <i class="iconfont icon-msnui-tag"></i>
+            <a href="/tags/framework7/">framework7</a>
+          </div>
+        
+      </div>
+    
+    
+      <div class="copyright-desc">
+  <div>
+    <span>本文地址：</span>
+    <a href="http://blog.ywulin.com/201706251602.html">http://blog.ywulin.com/201706251602.html</a>
+  </div>
+  <div>转载请注明出处，谢谢！</div>
+</div>
+
+    
+    
+      <div class="article-tip">
+  <div>您的支持将鼓励我继续创作！</div>
+  <a id="tip-btn" class="tip-btn">赏</a>
+  <div class="tip-method hide">
+    <div class="tip-method-item">
+      <img src="/image/wepay.JPG" alt="微信打赏">
+      <div>微信打赏</div>
+    </div>
+    <div class="tip-method-item">
+      <img src="/image/alipay.JPG" alt="支付宝打赏">
+      <div>支付宝打赏</div>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="near-article">
+      
+      
+        <a href="/201706251602.html" class="near-article-item">
+          下一篇：gulp自动化构建工具学习
+        </a>
+      
+    </div>
+    
+      <div class="foot-share">
+        <div>分享到：</div>
+        <div class="bdsharebuttonbox">
+          <a href="#" class="bds_more" data-cmd="more"></a>
+          <a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a>
+          <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+          <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+          <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+          <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+          <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+          <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+          <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+          <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+          <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+        </div>
+      </div>
+      <script>
+        window._bd_share_config = {
+          'common': {
+            'bdText': '',
+            'bdDesc': '用vue来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，vue-router有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的framework7+vue来做webapp。framework7-vue出的时间不长，官网上描述不是特别详细，所以在这里使用vue+framework7-vue+framework7来重绘官网的demo。',
+            'bdUrl': 'http://blog.ywulin.com/201707141526.html',
+            'bdMini': '2',
+            'bdMiniList': false,
+            'bdStyle': '1',
+            'bdSize': '16'
+          },
+          'share': {}
+        };
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+      </script>
+    
+    
+      <div class="pinglun-tips">tips：网易评论修改昵称和头像请下载手机app网易新闻</div>
+    
+  </div>
+  
+    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href,
+        sourceId: "",
+        productKey: "d43d15ba9004441ab4775eb8f1ba0f35",
+        target: "cloud-tie-wrapper"
+      };
+      var yunManualLoad = true;
+      Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+    </script>
+  
+</div>
+
+        </section>
+        <div id="toolbar">
+          
+  <div class="widget-item">
+  <div id="search-mask" class="hide"></div>
+  <div class="search-block js-transition-click">
+    <input class="search-input" id="search-key" type="text" placeholder="搜索文章">
+    <span id="search-btn" class="iconfont icon-sousuo_sousuo"></span>
+    <i class="search-bottom"></i>
+    <i class="search-transition-line js-transition-bottom"></i>
+    <div id="search-result" class="hide">
+      <div class="search-result-content"></div>
+    </div>
+    <div class="hide">
+      <template id="search-tpl">
+        <div class="search-result-item">
+          <a href="/{{path}}" title="{{title}}">
+            <div class="item-title">{{title}}</div>
+            <div class="item-date">{{date}}</div>
+            <div class="tags">{{tags}}</div>
+          </a>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-wenzhang"></i>
+      <span>最新文章</span>
+    </h3>
+    <ul class="widget">
+      
+        <li>
+          <a href="/201707141526.html">Framework7+Framework7-vue+vue踩坑记（一）</a>
+        </li>
+      
+        <li>
+          <a href="/201706251602.html">gulp自动化构建工具学习</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-fenlei"></i>
+      <span>分类</span>
+    </h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/webapp/">webapp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/自动化构建工具/">自动化构建工具</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-msnui-tag"></i>
+      <span>标签</span>
+    </h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/framework7/">framework7</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+
+  
+  <div class="widget-item">
+    <h3 class="widget-title">
+      <i class="iconfont icon-book2"></i>
+      <span>归档</span>
+    </h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+
+
+        </div>
+      
+    </div>
+    
+      <a id="to-top" title="回到顶部">
+  <div class="to-top-content js-transition-hover">
+    <div class="to-top-bg js-transition-bottom"></div>
+    <span class="iconfont icon-xiangshang"></span>
+  </div>
+</a>
+
+    
+    <div id="footer">
+  
+    <div class="footer-count">
+      <span id="busuanzi_container_site_pv">
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+      </span>
+    </div>
+  
+  <div class="footer-info">
+    <p>Copyright &copy; <a href="http://blog.ywulin.com/201706251602.html">涯无凌（yawuling）</a>.</p>
+    <p>Power by <a href="https://hexo.io/">Hexo.</a></p>
+    <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages.</a></p>
+  </div>
+</div>
+
+  </div>
+  <script src="/js/jquery-3.2.1.min.js"></script>
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  <script src="/js/Ani.js"></script>
+  
+    <script src="/js/search.js"></script>
+  
+</body>
+</html>
