@@ -23,6 +23,10 @@ body {
   background: #fbfbfb;
   font-family: '微软雅黑', tahoma, arial, 'Hiragino Sans GB', "宋体", sans-serif;
 }
+.fixed {
+  position: fixed;
+  top: 20px;
+}
 #bg {
   position: absolute;
   -webkit-display: flex;
@@ -64,6 +68,19 @@ body {
 #header {
   min-height: 248px;
   color: #fff;
+}
+.header-site {
+  position: absolute;
+  left: 50px;
+  margin: 16px 0;
+}
+.header-site .header-site-item {
+  padding: 10px 18px;
+  color: #fff;
+  text-decoration: none;
+}
+.header-site .header-site-item .iconfont {
+  font-size: 28px;
 }
 .header-nav {
   position: absolute;
@@ -127,7 +144,7 @@ body {
   vertical-align: top;
 }
 #main .post {
-  padding: 30px 10px 30px 10px;
+  padding: 30px 10px;
   border-bottom: 1px solid #ccc;
 }
 #main .post-title {
@@ -203,7 +220,7 @@ body {
   margin: 0 6px;
   font-size: 18px;
 }
-#main .post-footer {
+#main .post-article-footer {
   margin-top: 20px;
   overflow: auto;
 }
@@ -278,14 +295,29 @@ body {
   padding: 4px;
   margin: 0 6px;
 }
-#main .archive-label {
-  font-size: 18px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ccc;
+#main .archive-date {
+  font-size: 20px;
+  color: #555;
 }
-#main .archive-label .archive-label-txt {
+#main .archive-item {
+  display: flex;
+  margin: 10px 0 10px 60px;
+}
+#main .archive-item .archive-item-date {
+  width: 120px;
+  flex-shrink: 0;
+  color: #999;
+}
+#main .archive-item .archive-item-title {
+  flex-grow: 1;
+}
+#main .archive-item .archive-item-title a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#main .archive-item .archive-item-title a:hover {
   color: #1296db;
-  font-size: 22px;
 }
 #post .post-header {
   padding-bottom: 10px;
@@ -312,12 +344,13 @@ body {
 #post .post-footer .copyright-desc {
   text-align: center;
   margin-bottom: 30px;
+  color: #999;
 }
 #post .post-footer .copyright-desc div {
   margin-bottom: 10px;
 }
 #post .post-footer .copyright-desc a {
-  color: #666;
+  color: #999;
   text-decoration: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -407,6 +440,10 @@ body {
   display: flex;
   margin-top: 30px;
   align-items: center;
+}
+.markdown-body img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 #toolbar {
   display: inline-block;
@@ -613,6 +650,16 @@ body {
 #toolbar .widget .archive-list-count:after {
   content: '）';
 }
+#toolbar .post-toc {
+  background: #fbfbfb;
+}
+#toolbar .post-toc .toc {
+  margin: 0;
+  padding: 0;
+}
+#toolbar .post-toc .toc a:visited {
+  color: #aaa;
+}
 #toolbar .tagcloud a {
   margin-right: 10px;
 }
@@ -688,15 +735,90 @@ body {
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
+#about .about-block {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  width: 500px;
+  align-items: center;
+  margin: 40px auto;
+}
+#about .about-block .about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+#about .about-block .about-info {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+#about .about-block .about-info .about-info-item {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  margin-bottom: 14px;
+}
+#about .about-block .about-info .about-info-item .about-info-item-label {
+  width: 80px;
+  flex-shrink: 0;
+}
+#about .about-block .about-info .about-info-item .about-info-item-txt {
+  flex-grow: 1;
+}
+#about .about-block .about-info .about-info-item .about-href {
+  color: #666;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#about .about-block .about-info .about-info-item .about-href:hover {
+  color: #1296db;
+}
+@media screen and (max-width: 900px) {
+  #about .about-block {
+    display: block;
+    width: auto;
+  }
+  #about .about-block .about-photo {
+    display: block;
+    margin: 0 auto;
+  }
+  #about .about-block .about-info {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 700px) {
+  .header-site {
+    left: 20px;
+  }
+  .header-site .header-site-item {
+    padding: 10px;
+  }
+  .header-nav {
+    right: 20px;
+  }
+  .nav-item {
+    padding: 10px 14px;
+  }
   #main {
     width: 100%;
     padding-right: 0;
     border-right: none;
   }
+  #main .post {
+    padding: 10px;
+  }
   #main #page-list .page-number,
   #main #page-list .space {
     display: none;
+  }
+  #main .archive-item {
+    margin: 10px 0;
   }
   #container {
     padding: 0 20px;
@@ -727,6 +849,9 @@ body {
   }
   #toolbar .widget-item {
     margin-bottom: 20px;
+  }
+  #toolbar #post-toc {
+    display: none;
   }
   #post .post-header .post-title {
     font-size: 18px;

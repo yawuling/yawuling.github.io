@@ -29,6 +29,9 @@
   text-shadow: none;
   padding: 0;
 }
+.markdown-body .highlight {
+  margin: 16px 0;
+}
 .markdown-body .highlight pre {
   border: none;
   margin: 0;
