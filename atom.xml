@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ywulin.com/"/>
-  <updated>2017-07-23T09:56:22.326Z</updated>
+  <updated>2017-07-23T10:51:19.144Z</updated>
   <id>http://blog.ywulin.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.ywulin.com/201707171854.html"/>
     <id>http://blog.ywulin.com/201707171854.html</id>
     <published>2017-07-19T15:38:44.000Z</published>
-    <updated>2017-07-23T09:56:22.326Z</updated>
+    <updated>2017-07-23T10:51:19.144Z</updated>
     
     <content type="html"><![CDATA[<p>接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续<code>framework7</code>+<code>vue</code>+<code>framework7-vue</code>踩坑第二波，同样通过重绘官网demo来运用<code>framework-vue</code>。</p>
 <a id="more"></a>
@@ -80,7 +80,7 @@
     <link href="http://blog.ywulin.com/201707141526.html"/>
     <id>http://blog.ywulin.com/201707141526.html</id>
     <published>2017-07-14T07:27:13.000Z</published>
-    <updated>2017-07-23T09:53:48.605Z</updated>
+    <updated>2017-07-23T10:51:16.388Z</updated>
     
     <content type="html"><![CDATA[<p>用<code>vue</code>来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，<code>vue-router</code>有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的<code>framework7</code>+<code>vue</code>来做webapp。<code>framework7-vue</code>出的时间不长，官网上描述不是特别详细，所以在这里使用<code>vue</code>+<code>framework7-vue</code>+<code>framework7</code>来重绘官网的demo。</p>
 <a id="more"></a>
@@ -135,7 +135,7 @@
     <link href="http://blog.ywulin.com/201706251602.html"/>
     <id>http://blog.ywulin.com/201706251602.html</id>
     <published>2017-06-25T08:02:45.000Z</published>
-    <updated>2017-06-25T08:20:09.953Z</updated>
+    <updated>2017-07-23T10:51:28.374Z</updated>
     
     <content type="html"><![CDATA[<p>Gulp.js 是一个自动化构建工具,开发者可以使用它在项目开发过程中自动执行常见任务。在这里介绍了gulp的入门，插件和gulpfile.js配置文件。</p>
 <a id="more"></a>
