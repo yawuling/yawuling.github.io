@@ -1,130 +1,28 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>涯无凌</title>
+  <subtitle>一枚渣渣前端工程师</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.ywulin.com/"/>
+  <updated>2017-07-23T09:56:22.326Z</updated>
+  <id>http://blog.ywulin.com/</id>
+  
+  <author>
+    <name>涯无凌</name>
     
-    <title>Framework7+Framework7-vue+vue踩坑记（二） | 涯无凌</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续framework7+vue+framework7-vue踩坑第二波，同样通过重绘官网demo来运用framework-vue。">
-<meta name="keywords" content="vue,framework7">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Framework7+Framework7-vue+vue踩坑记（二）">
-<meta property="og:url" content="http://blog.ywulin.com/201707171854.html">
-<meta property="og:site_name" content="涯无凌">
-<meta property="og:description" content="接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续framework7+vue+framework7-vue踩坑第二波，同样通过重绘官网demo来运用framework-vue。">
-<meta property="og:image" content="http://oqn7d0y3s.bkt.clouddn.com/2017071701.jpg">
-<meta property="og:image" content="http://oqn7d0y3s.bkt.clouddn.com/2017071703.jpg">
-<meta property="og:updated_time" content="2017-07-23T09:56:22.326Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Framework7+Framework7-vue+vue踩坑记（二）">
-<meta name="twitter:description" content="接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续framework7+vue+framework7-vue踩坑第二波，同样通过重绘官网demo来运用framework-vue。">
-<meta name="twitter:image" content="http://oqn7d0y3s.bkt.clouddn.com/2017071701.jpg">
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Framework7+Framework7-vue+vue踩坑记（二）</title>
+    <link href="http://blog.ywulin.com/201707171854.html"/>
+    <id>http://blog.ywulin.com/201707171854.html</id>
+    <published>2017-07-19T15:38:44.000Z</published>
+    <updated>2017-07-23T09:56:22.326Z</updated>
     
-    
-      <link rel="icon" href="/favicon.ico" >
-    
-    
-      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" >
-    
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_opokln6en9xxn7b9.css">
-    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="/css/Ani.css">
-    <link rel="stylesheet" href="/css/github-markdown.css">
-    <link rel="stylesheet" href="/css/highlight.css">
-    
-      <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?d07bed116b18b9fa55ad47db97b8c8d0";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-        </script>
-    
-  </head>
-
-<body>
-  <div id="bg">
-  <img src="/image/bg.jpg"/>
-</div>
-
-  <div id="container">
-    <header id="header">
-  <div class="header-site">
-    
-      <a class="header-site-item" href="https://github.com/yawuling" title="github">
-        <i class="iconfont icon-github"></i>
-      </a>
-    
-    
-  </div>
-  <nav class="header-nav">
-    
-      <a class="nav-item js-transition-hover" href="/">
-        <span>首页</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-      <a class="nav-item js-transition-hover" href="/archives">
-        <span>归档</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-      <a class="nav-item js-transition-hover" href="/about">
-        <span>关于</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-    
-      <a class="nav-item js-transition-hover" href="/atom.xml">
-        <span>订阅</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-  </nav>
-  <div class="header-desc">
-    <h1 class="author">涯无凌</h1>
-    
-      <h2 class="author-subtitle">一枚渣渣前端工程师</h2>
-    
-  </div>
-</header>
-
-    <div id="content">
-      
-        <section id="main">
-          <div id="post">
-  <div class="post-header">
-    <div class="post-title">Framework7+Framework7-vue+vue踩坑记（二）</div>
-    <div class="post-meta-c">
-      <div class="post-meta-l">
-        <div class="post-date">
-          <i class="iconfont icon-riqi"></i>
-          <span>2017-07-19</span>
-        </div>
-        
-          <span class="post-meta-line">|</span>
-          <div class="post-category">
-            
-              <div class="post-category-item">
-                <i class="iconfont icon-fenlei"></i>
-                <a href="/categories/webapp/">webapp</a>
-              </div>
-            
-          </div>
-        
-      </div>
-      
-        <div>
-          <i class="iconfont icon-yuedu"></i>
-          <span id="busuanzi_value_page_pv"></span>
-        </div>
-      
-    </div>
-  </div>
-  <div class="markdown-body">
-    <p>接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续<code>framework7</code>+<code>vue</code>+<code>framework7-vue</code>踩坑第二波，同样通过重绘官网demo来运用<code>framework-vue</code>。</p>
+    <content type="html"><![CDATA[<p>接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续<code>framework7</code>+<code>vue</code>+<code>framework7-vue</code>踩坑第二波，同样通过重绘官网demo来运用<code>framework-vue</code>。</p>
 <a id="more"></a>
 <hr>
 <h6 id="1-f7-message组件图片显示问题"><a href="#1-f7-message组件图片显示问题" class="headerlink" title="1. f7-message组件图片显示问题"></a>1. <code>f7-message</code>组件图片显示问题</h6><p><code>f7-message</code>中无法在信息的<code>text</code>属性中使用<code>&lt;img src=&quot;##&quot;&gt;</code>标签，因为<code>vue</code>的模板语法是将html标签直接转换成字符串的，而在这篇博客编写时官方文档也没给出<code>f7-messages</code>中如何插入图片，如要实现以下效果</p>
@@ -160,247 +58,261 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;style lang="less"&gt;</div><div class="line">.page[data-page="toolbar"]&#123;</div><div class="line">  .page-content&#123;</div><div class="line">    padding-bottom: 44px;</div><div class="line">  &#125;</div><div class="line">  .toolbar&#123;</div><div class="line">    transform: none;</div><div class="line">    transition: 0ms;</div><div class="line"></div><div class="line">    .active-state&#123;</div><div class="line">      opacity: 1;</div><div class="line">      transition: 0ms;</div><div class="line">    &#125;</div><div class="line">    a.active&#123;</div><div class="line">      i.inactive&#123;</div><div class="line">        display: none;</div><div class="line">      &#125;</div><div class="line">      i.active&#123;</div><div class="line">        margin-left: 0;</div><div class="line">        color: #007aff;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  .tabbar&#123;</div><div class="line">    a:not(.active)&#123;</div><div class="line">      i.active&#123;</div><div class="line">        display: none;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
 <hr>
 <p>framework7踩坑记（二）就更到这，后面继续更新<br>基于<code>framework7-vue</code>实现的官方实例 <a href="https://github.com/yawuling/vue-framework7" target="_blank" rel="external">vue-framework7</a>，持续更新中，欢迎star</p>
-
-  </div>
-  <div class="post-footer">
+]]></content>
     
-      <div class="footer-post-tags">
-        
-          <div class="post-tags-item">
-            <i class="iconfont icon-msnui-tag"></i>
-            <a href="/tags/vue/">vue</a>
-          </div>
-        
-          <div class="post-tags-item">
-            <i class="iconfont icon-msnui-tag"></i>
-            <a href="/tags/framework7/">framework7</a>
-          </div>
-        
-      </div>
+    <summary type="html">
+    
+      &lt;p&gt;接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续&lt;code&gt;framework7&lt;/code&gt;+&lt;code&gt;vue&lt;/code&gt;+&lt;code&gt;framework7-vue&lt;/code&gt;踩坑第二波，同样通过重绘官网demo来运用&lt;code&gt;framework-vue&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="webapp" scheme="http://blog.ywulin.com/categories/webapp/"/>
     
     
-      <div class="copyright-desc">
-  <div>
-    <span>本文地址：</span>
-    <a href="http://blog.ywulin.com/201707171854.html">http://blog.ywulin.com/201707171854.html</a>
-  </div>
-  <div>转载请注明出处，谢谢！</div>
-</div>
+      <category term="vue" scheme="http://blog.ywulin.com/tags/vue/"/>
+    
+      <category term="framework7" scheme="http://blog.ywulin.com/tags/framework7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Framework7+Framework7-vue+vue踩坑记（一）</title>
+    <link href="http://blog.ywulin.com/201707141526.html"/>
+    <id>http://blog.ywulin.com/201707141526.html</id>
+    <published>2017-07-14T07:27:13.000Z</published>
+    <updated>2017-07-23T09:53:48.605Z</updated>
+    
+    <content type="html"><![CDATA[<p>用<code>vue</code>来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，<code>vue-router</code>有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的<code>framework7</code>+<code>vue</code>来做webapp。<code>framework7-vue</code>出的时间不长，官网上描述不是特别详细，所以在这里使用<code>vue</code>+<code>framework7-vue</code>+<code>framework7</code>来重绘官网的demo。</p>
+<a id="more"></a>
+<hr>
+<p>网上关于<code>framework7-vue</code>的博客基本没有，所以我决定来踩波坑，以下是我在使用<code>framework7-vue</code>时遇到的一些需要注意的点</p>
+<h6 id="1-this指向"><a href="#1-this指向" class="headerlink" title="1. this指向"></a>1. <code>this</code>指向</h6><p>在定时器和<code>framework7</code>的api回调函数中，<code>this</code>会被修改指向其他作用域，在定时器或回调api调用之前定义一个变量保存指向<code>vue</code>作用域的<code>this</code></p>
+<h6 id="2-Autocomplete功能实现"><a href="#2-Autocomplete功能实现" class="headerlink" title="2. Autocomplete功能实现"></a>2. Autocomplete功能实现</h6><p><code>framework7-vue</code>没有<code>Autocomplete</code>组件，需要自己手动实现，<code>Autocomplete</code>主要通过js进行配置和初始化，自定义选项较多。<br><code>Autocomplete</code>需要使用到<code>f7-list</code>组件作为输入的容器，代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">f7-list</span> <span class="attr">form</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-label</span>&gt;</span>Fruit<span class="tag">&lt;/<span class="name">f7-label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Fruit"</span> <span class="attr">id</span>=<span class="string">"autocomplete-dropdown"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-input</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">f7-list</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>此外还需要在<code>vue</code>的生命周期<code>mounted</code>中进行初始化<br>tips：不能在<code>created</code>中进行初始化，这时候模板尚未编译挂载，无法将插件绑定到dom上</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">data() &#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    <span class="attr">fruits</span>: (<span class="string">'Apple Apricot Avocado Banana Melon Orange Peach Pear Pineapple'</span>).split(<span class="string">' '</span>)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">mounted() &#123;</div><div class="line">  <span class="comment">//注意，这里在插件初始化中this并非指向Vue实例的</span></div><div class="line">  <span class="keyword">let</span> fruits = <span class="keyword">this</span>.fruits;</div><div class="line">  <span class="keyword">let</span> autocompleteDropdownSimple = <span class="built_in">window</span>.f7.autocomplete(&#123;</div><div class="line">    <span class="attr">input</span>: <span class="string">'#autocomplete-dropdown'</span>,</div><div class="line">    <span class="attr">openIn</span>: <span class="string">'dropdown'</span>,</div><div class="line">    <span class="attr">source</span>: <span class="function"><span class="keyword">function</span> (<span class="params">autocomplete, query, render</span>) </span>&#123;</div><div class="line">      <span class="keyword">let</span> results = []</div><div class="line">      <span class="keyword">if</span> (query.length === <span class="number">0</span>) &#123;</div><div class="line">        render(results)</div><div class="line">        <span class="keyword">return</span></div><div class="line">      &#125;</div><div class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; fruits.length; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (fruits[i].toLowerCase().indexOf(query.toLowerCase()) &gt;= <span class="number">0</span>) &#123;</div><div class="line">          results.push(fruits[i])</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">      render(results)</div><div class="line">    &#125;</div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其他类型的选项请参照官网原生文档实现：<a href="http://docs.framework7.cn/Index/autocomplete.html" target="_blank" rel="external">http://docs.framework7.cn/Index/autocomplete.html</a></p>
+<h6 id="3-this-amp-this-Dom7-中无jsonp请求"><a href="#3-this-amp-this-Dom7-中无jsonp请求" class="headerlink" title="3. this.$$ &amp; this.Dom7 中无jsonp请求"></a>3. this.$$ &amp; this.Dom7 中无<code>jsonp</code>请求</h6><p>在this.$$中无jsonp请求，若要使用jsonp，可安装<code>vue-resource</code>（不过该插件作者已宣布不再更新），用法一样</p>
+<h6 id="4-Calendar-Datepicker"><a href="#4-Calendar-Datepicker" class="headerlink" title="4. Calendar / Datepicker"></a>4. Calendar / Datepicker</h6><p><code>framework7-vue</code>没有<code>Calendar / Datepicker</code>的组件，需要手动实现，跟Autocomplete一样，代码如下</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">f7-page</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-list</span> <span class="attr">form</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">f7-list-item</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">f7-input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Select date"</span> <span class="attr">readonly</span> <span class="attr">id</span>=<span class="string">"calendar-disabled"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-input</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">f7-list</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">f7-page</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span>&#123;</div><div class="line">  mounted () &#123;</div><div class="line">    <span class="keyword">let</span> calendarDefault = <span class="keyword">this</span>.$f7.calendar(&#123;</div><div class="line">      <span class="attr">input</span>: <span class="string">'#calendar-default'</span></div><div class="line">    &#125;)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
+<h6 id="5-Contacts"><a href="#5-Contacts" class="headerlink" title="5. Contacts"></a>5. Contacts</h6><p><code>framework7-vue</code>中有<code>contacts-list</code>组件，其<code>.list.group-title</code>在谷歌浏览器调试时，<code>position: sticky</code>中top是相对于viewport定位的，所以滚动后处于浏览器顶部，被navbar遮住，但在手机上是正常显示的，其top是相对于<code>.page-content</code>定位的</p>
+<h6 id="6-层级路由"><a href="#6-层级路由" class="headerlink" title="6. 层级路由"></a>6. 层级路由</h6><p><code>framework7-vue</code>在本文章撰写时除了在同页面Tab中有层级路由外，没有实现页面间的层级路由，跟<code>vue-router</code>不一样，要实现页面间的层级跳转，路由的写法跟平时写法一致，直接跳转即可，如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">    <span class="attr">path</span>: <span class="string">'/floatingAction/'</span>,</div><div class="line">    <span class="attr">component</span>: <span class="built_in">require</span>(<span class="string">'./pages/floatingAction/floatingAction.vue'</span>),</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">	<span class="comment">//我这里为了显示出层级关系，将其上一级页面的路由也包含进去，事实上是可以不用这么做的</span></div><div class="line">    path: <span class="string">'/floatingAction/staticFloating/'</span>,</div><div class="line">    <span class="attr">component</span>: <span class="built_in">require</span>(<span class="string">'./pages/floatingAction/staticFloating.vue'</span>)</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="attr">path</span>: <span class="string">'/floatingAction/speedDial/'</span>,</div><div class="line">    <span class="attr">component</span>: <span class="built_in">require</span>(<span class="string">'./pages/floatingAction/speedDial.vue'</span>)</div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<h6 id="7-f7-input-type-”select”"><a href="#7-f7-input-type-”select”" class="headerlink" title="7. f7-input: type=”select”"></a>7. f7-input: type=”select”</h6><p><code>f7-input</code>中设置<code>type=&quot;select&quot;</code>，不会有默认选中项，需要在<code>f7-input</code>中绑定<code>v-model=&quot;selected&quot;</code>，而给<code>option</code>设置<code>selected</code>属性是不会显示选中项的</p>
+<h6 id="8-无限滚动Infinite-Scroll"><a href="#8-无限滚动Infinite-Scroll" class="headerlink" title="8. 无限滚动Infinite Scroll"></a>8. 无限滚动Infinite Scroll</h6><p>无限滚动的实现是在<code>f7-page</code>中加上<code>infinite-scroll</code>，滚动事件为<code>@infinite=&quot;doSomething&quot;</code>，页面每次变更都需要重新刷新一次浏览器，否则<code>infinite</code>事件不会绑定，<code>infinite-scroll</code>是在<code>page:init</code>即页面初始化时初始化的，而热加载不会重新执行一遍<code>page:init</code>。以下是代码实现：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">f7-page</span> <span class="attr">infinite-scroll</span> @<span class="attr">infinite</span>=<span class="string">"onInfiniteScroll"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-navbar</span> <span class="attr">title</span>=<span class="string">"Infinite Scroll"</span> <span class="attr">back-link</span>=<span class="string">"返回"</span> <span class="attr">sliding</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">f7-nav-right</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">f7-link</span> <span class="attr">icon</span>=<span class="string">"icon icon-bars"</span> <span class="attr">open-panel</span>=<span class="string">"left"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-link</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">f7-nav-right</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">f7-navbar</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-block-title</span>&gt;</span>SCROLL BOTTOM<span class="tag">&lt;/<span class="name">f7-block-title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-list</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">f7-list-item</span> <span class="attr">v-for</span>=<span class="string">"item in items"</span> <span class="attr">:title</span>=<span class="string">"'Item ' + item"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">f7-list</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">f7-page</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">  data () &#123;</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">      <span class="attr">items</span>: <span class="number">20</span>,</div><div class="line">      <span class="attr">loading</span>: <span class="literal">false</span>,</div><div class="line">      <span class="attr">maxLength</span>: <span class="number">60</span></div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">methods</span>: &#123;</div><div class="line">    <span class="attr">onInfiniteScroll</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">if</span> (<span class="keyword">this</span>.loading) &#123;</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      <span class="keyword">this</span>.loading = <span class="literal">true</span>;</div><div class="line"></div><div class="line">      <span class="keyword">let</span> _this = <span class="keyword">this</span>;</div><div class="line"></div><div class="line">      setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        _this.loading = <span class="literal">false</span>;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (_this.items &gt;= _this.maxLength) &#123;</div><div class="line">          _this.$f7.detachInfiniteScroll(_this.$$(<span class="string">'.infinite-scroll'</span>))</div><div class="line">          _this.$$(<span class="string">'.infinite-scroll-preloader'</span>).remove()</div><div class="line">          <span class="keyword">return</span></div><div class="line">        &#125;</div><div class="line"></div><div class="line">        _this.items += <span class="number">20</span>;</div><div class="line">      &#125;, <span class="number">1000</span>)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
+<h6 id="9-f7-list的灵活性"><a href="#9-f7-list的灵活性" class="headerlink" title="9. f7-list的灵活性"></a>9. <code>f7-list</code>的灵活性</h6><p><code>f7-list</code>的比较灵活，严格来说应该是<code>f7-list-item</code>比较灵活，自由度高，该组件在设计时添加了不少slot选项来分发内容</p>
+<p><img src="http://oqn7d0y3s.bkt.clouddn.com/20170714152602.jpg" alt="f7-list-item的slots分发"></p>
+<p>灵活运用slots可以实现各种列表效果，如以下效果：</p>
+<center><img src="http://oqn7d0y3s.bkt.clouddn.com/20170714152601.jpg" alt="f7-list-item的slots分发效果"></center>
 
+<p>代码的实现如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">f7-list-item</span> <span class="attr">title</span>=<span class="string">"No icons here"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">slot</span>=<span class="string">"root"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-list-item</span></span></div><div class="line">      <span class="attr">link</span>=<span class="string">"#"</span></div><div class="line">      <span class="attr">media</span>=<span class="string">"&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</span></div><div class="line">      <span class="attr">title</span>=<span class="string">"Ivan Petrov"</span></div><div class="line">      <span class="attr">after</span>=<span class="string">"CEO"</span></div><div class="line">    &gt;<span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-list-item</span></span></div><div class="line">      <span class="attr">link</span>=<span class="string">"#"</span></div><div class="line">      <span class="attr">media</span>=<span class="string">"&lt;i class='icon icon-f7'&gt;&lt;/i&gt;&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</span></div><div class="line">      <span class="attr">title</span>=<span class="string">"Two icons here"</span></div><div class="line">    &gt;<span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-list-item</span> <span class="attr">title</span>=<span class="string">"No icons here"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-list-item</span></span></div><div class="line">      <span class="attr">link</span>=<span class="string">"#"</span></div><div class="line">      <span class="attr">media</span>=<span class="string">"&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</span></div><div class="line">      <span class="attr">title</span>=<span class="string">"Ultra long text goes here, no, it is really really long"</span></div><div class="line">    &gt;<span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-list-item</span></span></div><div class="line">      <span class="attr">media</span>=<span class="string">"&lt;i class='icon icon-f7'&gt;&lt;/i&gt;"</span></div><div class="line">      <span class="attr">title</span>=<span class="string">"With switch"</span>&gt;</div><div class="line">      <span class="tag">&lt;<span class="name">f7-input</span> <span class="attr">type</span>=<span class="string">'switch'</span> <span class="attr">slot</span>=<span class="string">"after"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-input</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div></pre></td></tr></table></figure>
+<h6 id="10-router"><a href="#10-router" class="headerlink" title="10. $router"></a>10. $router</h6><p>要在<code>javascript</code>中使用路由<code>$router</code>，用法为<code>this.$router</code>，<code>$router</code>是保存在<code>vue</code>作用域中的</p>
+<hr>
+<p><code>framework7-vue</code>的注意点目前就写到这，后面继续更新<br>基于<code>framework7-vue</code>实现的官方实例 <a href="https://github.com/yawuling/vue-framework7" target="_blank" rel="external">vue-framework7</a>，持续更新中，欢迎star</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用&lt;code&gt;vue&lt;/code&gt;来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，&lt;code&gt;vue-router&lt;/code&gt;有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的&lt;code&gt;framework7&lt;/code&gt;+&lt;code&gt;vue&lt;/code&gt;来做webapp。&lt;code&gt;framework7-vue&lt;/code&gt;出的时间不长，官网上描述不是特别详细，所以在这里使用&lt;code&gt;vue&lt;/code&gt;+&lt;code&gt;framework7-vue&lt;/code&gt;+&lt;code&gt;framework7&lt;/code&gt;来重绘官网的demo。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="webapp" scheme="http://blog.ywulin.com/categories/webapp/"/>
     
     
-      <div class="article-tip">
-  <div>您的支持将鼓励我继续创作！</div>
-  <a id="tip-btn" class="tip-btn">赏</a>
-  <div class="tip-method hide">
-    <div class="tip-method-item">
-      <img src="/image/wepay.JPG" alt="微信打赏">
-      <div>微信打赏</div>
-    </div>
-    <div class="tip-method-item">
-      <img src="/image/alipay.JPG" alt="支付宝打赏">
-      <div>支付宝打赏</div>
-    </div>
-  </div>
-</div>
-
+      <category term="vue" scheme="http://blog.ywulin.com/tags/vue/"/>
     
-    <div class="near-article">
-      
-      
-        <a href="/201707141526.html" class="near-article-item">
-          下一篇：Framework7+Framework7-vue+vue踩坑记（一）
-        </a>
-      
-    </div>
+      <category term="framework7" scheme="http://blog.ywulin.com/tags/framework7/"/>
     
-      <div class="foot-share">
-        <div>分享到：</div>
-        <div class="bdsharebuttonbox">
-          <a href="#" class="bds_more" data-cmd="more"></a>
-          <a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a>
-          <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-          <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-          <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-          <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-          <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-          <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-          <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-          <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
-          <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
-        </div>
-      </div>
-      <script>
-        window._bd_share_config = {
-          'common': {
-            'bdText': '',
-            'bdDesc': '接上一篇博客“Framework7+Framework7-vue+vue踩坑记（一）”，这里继续framework7+vue+framework7-vue踩坑第二波，同样通过重绘官网demo来运用framework-vue。',
-            'bdUrl': 'http://blog.ywulin.com/201707171854.html',
-            'bdMini': '2',
-            'bdMiniList': false,
-            'bdStyle': '1',
-            'bdSize': '16'
-          },
-          'share': {}
-        };
-        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-      </script>
+  </entry>
+  
+  <entry>
+    <title>gulp自动化构建工具学习</title>
+    <link href="http://blog.ywulin.com/201706251602.html"/>
+    <id>http://blog.ywulin.com/201706251602.html</id>
+    <published>2017-06-25T08:02:45.000Z</published>
+    <updated>2017-06-25T08:20:09.953Z</updated>
     
-  </div>
-  
-    <!--PC和WAP自适应版-->
-    <div id="SOHUCS" sid="/201707171854.html" ></div> 
-    <script type="text/javascript"> 
-    (function(){ 
-    var appid = 'cyt7PphVJ';
-    var conf = 'prod_4410b137ef873bd89cc97a9f5c61784d'; 
-    var width = window.innerWidth || document.documentElement.clientWidth; 
-    if (width < 960) { 
-    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
-  
-</div>
-
-        </section>
-        <div id="toolbar">
-          
-  <div class="widget-item">
-  <div id="search-mask" class="hide"></div>
-  <div class="search-block js-transition-click">
-    <input class="search-input" id="search-key" type="text" placeholder="搜索文章">
-    <span id="search-btn" class="iconfont icon-sousuo_sousuo"></span>
-    <i class="search-bottom"></i>
-    <i class="search-transition-line js-transition-bottom"></i>
-    <div id="search-result" class="hide">
-      <div class="search-result-content"></div>
-    </div>
-    <div class="hide">
-      <template id="search-tpl">
-        <div class="search-result-item">
-          <a href="/{{path}}" title="{{title}}">
-            <div class="item-title">{{title}}</div>
-            <div class="item-date">{{date}}</div>
-            <div class="tags">{{tags}}</div>
-          </a>
-        </div>
-      </template>
-    </div>
-  </div>
-</div>
-
-
-  
-  <div class="widget-item" id="post-toc">
-    <h3 class="widget-title">
-      <i class="iconfont icon-mulu"></i>
-      <span>目录</span>
-    </h3>
-    <div class="widget post-toc">
-      <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-f7-message组件图片显示问题"><span class="toc-text">1. f7-message组件图片显示问题</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-f7-messagebar"><span class="toc-text">2. f7-messagebar</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-f7-picker-modal内嵌navbar"><span class="toc-text">3. f7-picker-modal内嵌navbar</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-router无跳转到首页的方法"><span class="toc-text">4. $router无跳转到首页的方法</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-tabbar的实现"><span class="toc-text">5. tabbar的实现</span></a></li></ol>
-    </div>
-  </div>
-
-
-  
-  <div class="widget-item">
-    <h3 class="widget-title">
-      <i class="iconfont icon-wenzhang"></i>
-      <span>最新文章</span>
-    </h3>
-    <ul class="widget">
-      
-        <li>
-          <a href="/201707171854.html">Framework7+Framework7-vue+vue踩坑记（二）</a>
-        </li>
-      
-        <li>
-          <a href="/201707141526.html">Framework7+Framework7-vue+vue踩坑记（一）</a>
-        </li>
-      
-        <li>
-          <a href="/201706251602.html">gulp自动化构建工具学习</a>
-        </li>
-      
-    </ul>
-  </div>
-
-
-
-  
-  <div class="widget-item">
-    <h3 class="widget-title">
-      <i class="iconfont icon-fenlei"></i>
-      <span>分类</span>
-    </h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/webapp/">webapp</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/自动化构建工具/">自动化构建工具</a><span class="category-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-
-  
-  <div class="widget-item">
-    <h3 class="widget-title">
-      <i class="iconfont icon-msnui-tag"></i>
-      <span>标签</span>
-    </h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/framework7/">framework7</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a><span class="tag-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-
-  
-  <div class="widget-item">
-    <h3 class="widget-title">
-      <i class="iconfont icon-book2"></i>
-      <span>归档</span>
-    </h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-
-
-        </div>
-      
-    </div>
+    <content type="html"><![CDATA[<p>Gulp.js 是一个自动化构建工具,开发者可以使用它在项目开发过程中自动执行常见任务。在这里介绍了gulp的入门，插件和gulpfile.js配置文件。</p>
+<a id="more"></a>
+<h5 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h5><ol>
+<li><p>全局安装<code>gulp</code></p>
+<pre><code>$ npm install -g gulp
+</code></pre></li>
+<li><p>新建一个文件夹作为项目，进入该文件夹，初始化</p>
+<pre><code>$ mkdir example
+$ npm init
+</code></pre></li>
+<li><p>安装开发依赖（<code>devDependences</code>）</p>
+<pre><code>$ npm install --save-dev gulp
+</code></pre></li>
+<li><p>在项目根目录新建 <code>gulpfile.js</code> 文件</p>
+<pre><code>$ touch gulpfile.js
+</code></pre></li>
+<li><p>编辑<code>gulpfile.js</code>文件</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"></div><div class="line">   gulp.task(<span class="string">'default'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">   	<span class="comment">//默认任务代码</span></div><div class="line">   &#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>命令行运行gulp，即可运行默认任务</p>
+<pre><code>$ gulp
+</code></pre></li>
+</ol>
+<hr>
+<h5 id="api介绍"><a href="#api介绍" class="headerlink" title="api介绍"></a>api介绍</h5><blockquote>
+<p>这里只列出api常用用法，了解更多请查阅官网<a href="http://www.gulpjs.com.cn/docs/api/" target="_blank" rel="external">http://www.gulpjs.com.cn/docs/api/</a></p>
+</blockquote>
+<ol>
+<li><p>gulp.src(globs[, options])</p>
+<p> 输出符合匹配的文件并返回一个<code>stream</code>，可<code>pipe</code>到其他插件</p>
+<ul>
+<li><p>golbs(类型：<code>String</code>或<code>Array</code>)</p>
+<blockquote>
+<p>String: ‘src/js/*.js’<br>Array: [‘src/js/*.js’, ‘src/css/*.css’]</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>gulp.dest(path[, options])</p>
+<p> 将<code>pipe</code>进来的数据转存为指定文件夹下的文件，若指定文件夹不存在，则自动创建该文件夹</p>
+<ul>
+<li><p>path(类型：<code>String</code>或<code>Function</code>)</p>
+<blockquote>
+<p>String: ‘dist/js’<br>Function: 在函数中返回相应路径</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>gulp.task(name[, deps], fn)</p>
+<p> 定义一个任务</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'something'</span>, functio () &#123;</div><div class="line">	doSomething();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li><p>name(类型：<code>String</code>)</p>
+<blockquote>
+<p>任务的名字，可在命令行中通过<code>name</code>运行任务，<code>$ gulp name</code></p>
+</blockquote>
+</li>
+<li><p>deps(类型：Array)</p>
+<blockquote>
+<p>一个包含任务列表的数组，这些任务会在当前任务运行之前完成</p>
+</blockquote>
+</li>
+<li><p>fn(类型：<code>Function</code>)</p>
+<blockquote>
+<p>该任务要执行的内容</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>gulp.watch(glob[, opts], tasks) 或 gulp.watch(globs[, opts, cb])</p>
+<p> 文件监视，当指定匹配文件发生变化时，执行tasks或函数cb</p>
+<ul>
+<li><p>glob(类型：<code>String</code>或<code>Array</code>)</p>
+</li>
+<li><p>tasks(类型：<code>String</code>或<code>Array</code>)</p>
+<blockquote>
+<p>文件变动后执行之前定义好的任务</p>
+</blockquote>
+</li>
+<li><p>cb(类型： <code>Function</code>)</p>
+<blockquote>
+<p>传入一个记录文件变动的<code>event</code>对象，<code>event.type</code>记录变动类型：<code>added</code>, <code>changed</code>, <code>deleted</code>；<code>event.path</code>记录变动文件的路径</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h5 id="gulp插件介绍"><a href="#gulp插件介绍" class="headerlink" title="gulp插件介绍"></a>gulp插件介绍</h5><ol>
+<li><p>gulp-less/gulp-sass</p>
+<p> 预编译less/sass文件为css文件</p>
+<p> 安装：<code>$ npm install --save-dev gulp-less</code></p>
+</li>
+<li><p>gulp-autoprefixer</p>
+<p> 设置浏览器版本，css文件自动添加浏览器前缀</p>
+<p> 安装：<code>$ npm install --save-dev gulp-autoprefixer</code></p>
+</li>
+<li><p>gulp-minify-css</p>
+<p> 压缩css文件</p>
+<p> 安装：<code>$ npm install --save-dev gulp-minify-css</code></p>
+</li>
+<li><p>gulp-rename</p>
+<p> 重命名要输出的文件，如将.css重命名为.min.css</p>
+<p> 安装：<code>$ npm install --save-dev gulp-rename</code></p>
+</li>
+<li><p>vinyl-buffer</p>
+<p> 将vinyl对象内容中的stream转换为buffer</p>
+<p> 安装：<code>$ npm install --save-dev vinyl-buffer</code></p>
+</li>
+<li><p>vinyl-source-stream</p>
+<p> 将Browserify的bundle()的输出转换为Gulp可用的vinyl流</p>
+<p> 安装：<code>$ npm install --save-dev vinyl-source-stream</code></p>
+</li>
+<li><p>gulp-sourcemaps</p>
+<p> 编写内联sourcemaps</p>
+<p> 安装：<code>$ npm install --save-dev gulp-sourcemaps</code></p>
+</li>
+<li><p>browserify</p>
+<p> 可以让你使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码，在这里用来管理依赖</p>
+<p> 安装：<code>$ npm install --save-dev browserify</code></p>
+</li>
+<li><p>babelify</p>
+<p> 将ES6转换成ES5</p>
+<p> 安装：<code>$ npm install --save-dev babelify</code></p>
+</li>
+<li><p>gulp-uglify</p>
+<p>压缩 JavaScript 文件</p>
+<p>安装：<code>$ npm install --save-dev gulp-uglify</code></p>
+</li>
+<li><p>gulp-imagemin</p>
+<p>压缩 png，jpeg，gif和svg图片资源</p>
+<p>安装：<code>$ npm install --save-dev gulp-imagemin</code></p>
+</li>
+<li><p>gulp-cache</p>
+<p>图片缓存，只有图片替换了才压缩</p>
+<p>安装：<code>$ npm install --save-dev gulp-cache</code></p>
+</li>
+<li><p>gulp-clean</p>
+<p>移除文件或文件夹</p>
+<p>安装：<code>$ npm install --save-dev gulp-clean</code></p>
+</li>
+<li><p>gulp-util</p>
+<p>包含gulp的一些实用功能，在这里用来打印编译错误</p>
+<p>安装：<code>$ npm install --save-dev gulp-util</code></p>
+</li>
+<li><p>gulp-notify</p>
+<p>当文件变更时提醒</p>
+<p>安装：<code>$ npm install gulp-notify</code></p>
+</li>
+<li><p>gulp-connect</p>
+<p>gulp中用来运行服务器的插件，内含LiveReload，自动刷新浏览器</p>
+<p>安装：<code>$ npm install --save-dev gulp-connect</code></p>
+</li>
+</ol>
+<hr>
+<h5 id="gulpfile-js文件配置"><a href="#gulpfile-js文件配置" class="headerlink" title="gulpfile.js文件配置"></a>gulpfile.js文件配置</h5><ul>
+<li>内含 ES6 转 ES5</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</div><div class="line">    less = <span class="built_in">require</span>(<span class="string">'gulp-less'</span>),</div><div class="line">    autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>),</div><div class="line">    minifycss = <span class="built_in">require</span>(<span class="string">'gulp-minify-css'</span>),</div><div class="line">    uglify = <span class="built_in">require</span>(<span class="string">'gulp-uglify'</span>),</div><div class="line">    imagemin = <span class="built_in">require</span>(<span class="string">'gulp-imagemin'</span>),</div><div class="line">    rename = <span class="built_in">require</span>(<span class="string">'gulp-rename'</span>),</div><div class="line">    clean = <span class="built_in">require</span>(<span class="string">'gulp-clean'</span>),</div><div class="line">    cache = <span class="built_in">require</span>(<span class="string">'gulp-cache'</span>),</div><div class="line">    notify = <span class="built_in">require</span>(<span class="string">'gulp-notify'</span>),</div><div class="line">    browserify = <span class="built_in">require</span>(<span class="string">'browserify'</span>),</div><div class="line">    babelify = <span class="built_in">require</span>(<span class="string">'babelify'</span>),</div><div class="line">    buffer = <span class="built_in">require</span>(<span class="string">'vinyl-buffer'</span>),</div><div class="line">    source = <span class="built_in">require</span>(<span class="string">'vinyl-source-stream'</span>),</div><div class="line">    sourcemaps = <span class="built_in">require</span>(<span class="string">'gulp-sourcemaps'</span>),</div><div class="line">    gutil = <span class="built_in">require</span>(<span class="string">'gulp-util'</span>),</div><div class="line">    connect = <span class="built_in">require</span>(<span class="string">'gulp-connect'</span>);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * styles任务，将'src/less'目录下的less文件转换成css文件，</div><div class="line"> * 并加上浏览器前缀，存放于'dist/css'目录下，之后重命名加上.min，压缩，</div><div class="line"> * 保存为.min.css文件，之后刷新浏览器，并提醒style任务完成</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'styles'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/less/*.less'</span>)</div><div class="line">        .pipe(less())</div><div class="line">        .pipe(autoprefixer(<span class="string">'last 2 version'</span>, <span class="string">'safari 5'</span>, <span class="string">'ie 8'</span>,</div><div class="line">        <span class="string">'ie 9'</span>, <span class="string">'opera 12.1'</span>, <span class="string">'ios 6'</span>, <span class="string">'android 4'</span>))</div><div class="line">        .on(<span class="string">'error'</span>, gutil.log)</div><div class="line">        .pipe(gulp.dest(<span class="string">'dist/css'</span>))</div><div class="line">        .pipe(rename(&#123;<span class="attr">suffix</span>: <span class="string">'.min'</span>&#125;))</div><div class="line">        .pipe(sourcemaps.init())</div><div class="line">        .pipe(minifycss())</div><div class="line">        .pipe(sourcemaps.write(<span class="string">'./'</span>))</div><div class="line">        .pipe(gulp.dest(<span class="string">'dist/css'</span>))</div><div class="line">        .pipe(connect.reload())</div><div class="line">        .pipe(notify(&#123;<span class="attr">message</span>: <span class="string">'style task complete'</span>&#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * scripts任务，通过browserify设置入口文件，然后用babelify将</div><div class="line"> * es6转换成es5，保存在'dist/js'目录下，之后压缩js文件，重命名</div><div class="line"> * 保存为.min.js文件</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'scripts'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> b = browserify(&#123;</div><div class="line">        <span class="attr">entries</span>: <span class="string">'src/js/cart.js'</span>,</div><div class="line">        <span class="attr">debug</span>: <span class="literal">true</span></div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    <span class="keyword">return</span> b.transform(babelify.configure(&#123;</div><div class="line">            <span class="attr">presets</span>: [<span class="string">"es2015"</span>]</div><div class="line">        &#125;))</div><div class="line">        .bundle()</div><div class="line">        .on(<span class="string">'error'</span>, gutil.log)</div><div class="line">        .pipe(source(<span class="string">'cart.js'</span>))</div><div class="line">        .pipe(gulp.dest(<span class="string">'dist/js'</span>))</div><div class="line">        .pipe(buffer())</div><div class="line">        .pipe(sourcemaps.init(&#123;<span class="attr">loadMaps</span>: <span class="literal">true</span>&#125;))</div><div class="line">        .pipe(uglify())</div><div class="line">        .on(<span class="string">'error'</span>, gutil.log)</div><div class="line">        .pipe(sourcemaps.write(<span class="string">'./'</span>))</div><div class="line">        .pipe(rename(&#123; <span class="attr">suffix</span>: <span class="string">'.min'</span>&#125;))</div><div class="line">        .pipe(gulp.dest(<span class="string">'dist/js'</span>))</div><div class="line">        .pipe(connect.reload());</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * images任务，读取'src/img'目录下的图片，压缩并保存到'dist/img'目录下</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'images'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/img/*'</span>)</div><div class="line">        .pipe(cache(imagemin([</div><div class="line">            imagemin.gifsicle(&#123;<span class="attr">interlaced</span>: <span class="literal">true</span>&#125;),</div><div class="line">            imagemin.jpegtran(&#123;<span class="attr">progressive</span>: <span class="literal">true</span>&#125;),</div><div class="line">            imagemin.optipng(&#123;<span class="attr">optimizationLevel</span>: <span class="number">5</span>&#125;),</div><div class="line">            imagemin.svgo(&#123;<span class="attr">plugins</span>: [&#123;<span class="attr">removeViewBox</span>: <span class="literal">true</span>&#125;]&#125;)])))</div><div class="line">        .on(<span class="string">'error'</span>, gutil.log)</div><div class="line">        .pipe(gulp.dest(<span class="string">'dist/img'</span>))</div><div class="line">        .pipe(connect.reload());</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * html任务，读取'src'目录下的html文件，并保存到'dist'目录下</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'html'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/shangcheng/*.html'</span>)</div><div class="line">        .pipe(gulp.dest(<span class="string">'dist/'</span>))</div><div class="line">        .pipe(connect.reload());</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * connect任务，运行服务器并自动刷新浏览器</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'connect'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    connect.server(&#123;</div><div class="line">        <span class="attr">livereload</span>: <span class="literal">true</span></div><div class="line">    &#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * clean任务，将dist目录下的css文件，js文件，图片文件和html文件清除</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'clean'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'dist/css'</span>, <span class="string">'dist/js'</span>, <span class="string">'dist/img'</span>,</div><div class="line">    <span class="string">'dist/*.html'</span>], &#123;<span class="attr">read</span>: <span class="literal">false</span>&#125;)</div><div class="line">        .pipe(clean());</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * 默认任务，在开始执行styles任务，scripts任务，images任务，html任务</div><div class="line"> * 之前先执行clean任务</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'clean'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.start(<span class="string">'styles'</span>, <span class="string">'scripts'</span>, <span class="string">'images'</span>, <span class="string">'html'</span>);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * 监视任务，监听less文件，js文件，图片文件和html文件的变更</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'watch'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">//监听所有.less</span></div><div class="line">    gulp.watch(<span class="string">'src/less/*.less'</span>, [<span class="string">'styles'</span>]);</div><div class="line"></div><div class="line">    <span class="comment">//监听所有.js文件</span></div><div class="line">    gulp.watch(<span class="string">'src/js/*.js'</span>, [<span class="string">'scripts'</span>]);</div><div class="line"></div><div class="line">    <span class="comment">//监听所有图片文件</span></div><div class="line">    gulp.watch(<span class="string">'src/img/*'</span>, [<span class="string">'images'</span>]);</div><div class="line"></div><div class="line">    <span class="comment">//监听html文件</span></div><div class="line">    gulp.watch(<span class="string">'src/*.html'</span>, [<span class="string">'html'</span>]);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * server任务，执行connect任务和watch任务</div><div class="line"> */</div><div class="line">gulp.task(<span class="string">'server'</span>, [<span class="string">'connect'</span>, <span class="string">'watch'</span>]);</div></pre></td></tr></table></figure>
+<ul>
+<li>不含 ES6 的 js 文件任务</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'scripts'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/js/*.js'</span>)</div><div class="line">    	.pipe(gulp.dest(<span class="string">'dist/js'</span>))</div><div class="line">        .pipe(rename(&#123; <span class="attr">suffix</span>: <span class="string">'.min'</span> &#125;))</div><div class="line">        .pipe(sourcemaps.init(&#123;<span class="attr">loadMaps</span>: <span class="literal">true</span>&#125;))</div><div class="line">    	.pipe(uglify())</div><div class="line">        .pipe(sourcemaps.write(<span class="string">'./'</span>))</div><div class="line">        .on(<span class="string">'error'</span>, gutil.log)</div><div class="line">        .pipe(gulp.dest(<span class="string">'dist/js'</span>))</div><div class="line">        .pipe(connect.reload());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+]]></content>
     
-      <a id="to-top" title="回到顶部">
-  <div class="to-top-content js-transition-hover">
-    <div class="to-top-bg js-transition-bottom"></div>
-    <span class="iconfont icon-xiangshang"></span>
-  </div>
-</a>
-
+    <summary type="html">
     
-    <div id="footer">
+      &lt;p&gt;Gulp.js 是一个自动化构建工具,开发者可以使用它在项目开发过程中自动执行常见任务。在这里介绍了gulp的入门，插件和gulpfile.js配置文件。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="自动化构建工具" scheme="http://blog.ywulin.com/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="gulp" scheme="http://blog.ywulin.com/tags/gulp/"/>
+    
+  </entry>
   
-    <div class="footer-count">
-      <span id="busuanzi_container_site_pv">
-        本站总访问量<span id="busuanzi_value_site_pv"></span>次
-      </span>
-    </div>
-  
-  <div class="footer-info">
-    <p>Copyright &copy; <a href="http://blog.ywulin.com/201707171854.html">涯无凌（yawuling）</a>.</p>
-    <p>Power by <a href="https://hexo.io/">Hexo</a></p>
-    <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a> and <a href="https://github.com/" style="font-weight: bold">Github</a></p>
-  </div>
-</div>
-
-  </div>
-  <script src="/js/jquery-3.2.1.min.js"></script>
-  
-    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  
-  <script src="/js/jquery.fancybox.min.js"></script>
-  <script src="/js/Ani.js"></script>
-  
-    <script src="/js/search.js"></script>
-  
-</body>
-</html>
+</feed>

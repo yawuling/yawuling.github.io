@@ -23,7 +23,8 @@
     
       <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css" >
     
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_350yjxn0ozbprpb9.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_opokln6en9xxn7b9.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="/css/Ani.css">
     <link rel="stylesheet" href="/css/github-markdown.css">
     <link rel="stylesheet" href="/css/highlight.css">
@@ -47,6 +48,14 @@
 
   <div id="container">
     <header id="header">
+  <div class="header-site">
+    
+      <a class="header-site-item" href="https://github.com/yawuling" title="github">
+        <i class="iconfont icon-github"></i>
+      </a>
+    
+    
+  </div>
   <nav class="header-nav">
     
       <a class="nav-item js-transition-hover" href="/">
@@ -59,6 +68,16 @@
         <i class="nav-item-bottom js-transition-bottom"></i>
       </a>
     
+      <a class="nav-item js-transition-hover" href="/about">
+        <span>关于</span>
+        <i class="nav-item-bottom js-transition-bottom"></i>
+      </a>
+    
+    
+      <a class="nav-item js-transition-hover" href="/atom.xml">
+        <span>订阅</span>
+        <i class="nav-item-bottom js-transition-bottom"></i>
+      </a>
     
   </nav>
   <div class="header-desc">
@@ -346,23 +365,17 @@ $ npm init
         with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
       </script>
     
-    
-      <div class="pinglun-tips">tips：网易评论修改昵称和头像请下载手机app网易新闻</div>
-    
   </div>
   
-    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-    <script>
-      var cloudTieConfig = {
-        url: document.location.href,
-        sourceId: "",
-        productKey: "d43d15ba9004441ab4775eb8f1ba0f35",
-        target: "cloud-tie-wrapper"
-      };
-      var yunManualLoad = true;
-      Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-    </script>
+    <!--PC和WAP自适应版-->
+    <div id="SOHUCS" sid="/201706251602.html" ></div> 
+    <script type="text/javascript"> 
+    (function(){ 
+    var appid = 'cyt7PphVJ';
+    var conf = 'prod_4410b137ef873bd89cc97a9f5c61784d'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
   
 </div>
 
@@ -392,6 +405,18 @@ $ npm init
     </div>
   </div>
 </div>
+
+
+  
+  <div class="widget-item" id="post-toc">
+    <h3 class="widget-title">
+      <i class="iconfont icon-mulu"></i>
+      <span>目录</span>
+    </h3>
+    <div class="widget post-toc">
+      <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-f7-message组件图片显示问题"><span class="toc-text">1. f7-message组件图片显示问题</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-f7-messagebar"><span class="toc-text">2. f7-messagebar</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-f7-picker-modal内嵌navbar"><span class="toc-text">3. f7-picker-modal内嵌navbar</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-router无跳转到首页的方法"><span class="toc-text">4. $router无跳转到首页的方法</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-tabbar的实现"><span class="toc-text">5. tabbar的实现</span></a></li></ol>
+    </div>
+  </div>
 
 
   
@@ -481,8 +506,8 @@ $ npm init
   
   <div class="footer-info">
     <p>Copyright &copy; <a href="http://blog.ywulin.com/201707171854.html">涯无凌（yawuling）</a>.</p>
-    <p>Power by <a href="https://hexo.io/">Hexo.</a></p>
-    <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages.</a></p>
+    <p>Power by <a href="https://hexo.io/">Hexo</a></p>
+    <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a> and <a href="https://github.com/" style="font-weight: bold">Github</a></p>
   </div>
 </div>
 
@@ -491,6 +516,7 @@ $ npm init
   
     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
+  <script src="/js/jquery.fancybox.min.js"></script>
   <script src="/js/Ani.js"></script>
   
     <script src="/js/search.js"></script>
