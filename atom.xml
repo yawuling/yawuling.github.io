@@ -86,12 +86,11 @@
     <link href="http://blog.ywulin.com/201707141526.html"/>
     <id>http://blog.ywulin.com/201707141526.html</id>
     <published>2017-07-14T07:27:13.000Z</published>
-    <updated>2017-07-23T10:51:16.388Z</updated>
+    <updated>2017-07-26T13:39:35.757Z</updated>
     
-    <content type="html"><![CDATA[<p>用<code>vue</code>来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，<code>vue-router</code>有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的<code>framework7</code>+<code>vue</code>来做webapp。<code>framework7-vue</code>出的时间不长，官网上描述不是特别详细，所以在这里使用<code>vue</code>+<code>framework7-vue</code>+<code>framework7</code>来重绘官网的demo。</p>
+    <content type="html"><![CDATA[<p>网上关于<code>framework7-vue</code>的博客基本没有，所以我决定用它来重绘官网的Demo，来踩波坑，以下是我在使用<code>framework7-vue</code>时遇到的一些需要注意的点</p>
 <a id="more"></a>
 <hr>
-<p>网上关于<code>framework7-vue</code>的博客基本没有，所以我决定来踩波坑，以下是我在使用<code>framework7-vue</code>时遇到的一些需要注意的点</p>
 <h6 id="1-this指向"><a href="#1-this指向" class="headerlink" title="1. this指向"></a>1. <code>this</code>指向</h6><p>在定时器和<code>framework7</code>的api回调函数中，<code>this</code>会被修改指向其他作用域，在定时器或回调api调用之前定义一个变量保存指向<code>vue</code>作用域的<code>this</code></p>
 <h6 id="2-Autocomplete功能实现"><a href="#2-Autocomplete功能实现" class="headerlink" title="2. Autocomplete功能实现"></a>2. Autocomplete功能实现</h6><p><code>framework7-vue</code>没有<code>Autocomplete</code>组件，需要自己手动实现，<code>Autocomplete</code>主要通过js进行配置和初始化，自定义选项较多。<br><code>Autocomplete</code>需要使用到<code>f7-list</code>组件作为输入的容器，代码如下：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">f7-list</span> <span class="attr">form</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">f7-list-item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-label</span>&gt;</span>Fruit<span class="tag">&lt;/<span class="name">f7-label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">f7-input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"Fruit"</span> <span class="attr">id</span>=<span class="string">"autocomplete-dropdown"</span>&gt;</span><span class="tag">&lt;/<span class="name">f7-input</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">f7-list-item</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">f7-list</span>&gt;</span></div></pre></td></tr></table></figure>
@@ -123,7 +122,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;用&lt;code&gt;vue&lt;/code&gt;来做webapp是很合适的，它有自己的路由和过渡，不过对于ios系统的侧滑返回功能，&lt;code&gt;vue-router&lt;/code&gt;有点瑕疵，过渡动画会重复。故使用淘宝针对ios制作的&lt;code&gt;framework7&lt;/code&gt;+&lt;code&gt;vue&lt;/code&gt;来做webapp。&lt;code&gt;framework7-vue&lt;/code&gt;出的时间不长，官网上描述不是特别详细，所以在这里使用&lt;code&gt;vue&lt;/code&gt;+&lt;code&gt;framework7-vue&lt;/code&gt;+&lt;code&gt;framework7&lt;/code&gt;来重绘官网的demo。&lt;/p&gt;
+      &lt;p&gt;网上关于&lt;code&gt;framework7-vue&lt;/code&gt;的博客基本没有，所以我决定用它来重绘官网的Demo，来踩波坑，以下是我在使用&lt;code&gt;framework7-vue&lt;/code&gt;时遇到的一些需要注意的点&lt;/p&gt;
     
     </summary>
     
