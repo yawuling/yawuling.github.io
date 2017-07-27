@@ -46,43 +46,57 @@
 
   <div id="container">
     <header id="header">
-  <div class="header-site">
-    
-      <a class="header-site-item" href="https://github.com/yawuling" title="github">
-        <i class="iconfont icon-github"></i>
-      </a>
-    
-    
+  <div class="header-top">
+    <div class="header-site">
+      
+        <a class="header-site-item" href="https://github.com/yawuling" title="github">
+          <i class="iconfont icon-github"></i>
+        </a>
+      
+      
+    </div>
+    <nav class="header-nav">
+      
+        <a class="nav-item js-transition-hover" href="/">
+          <span>首页</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+        <a class="nav-item js-transition-hover" href="/archives">
+          <span>归档</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+        <a class="nav-item js-transition-hover" href="/about">
+          <span>关于</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+      
+        <a class="nav-item js-transition-hover" href="/atom.xml">
+          <span>订阅</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+    </nav>
   </div>
-  <nav class="header-nav">
-    
-      <a class="nav-item js-transition-hover" href="/">
-        <span>首页</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-      <a class="nav-item js-transition-hover" href="/archives">
-        <span>归档</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-      <a class="nav-item js-transition-hover" href="/about">
-        <span>关于</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-    
-      <a class="nav-item js-transition-hover" href="/atom.xml">
-        <span>订阅</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-  </nav>
   <div class="header-desc">
-    <h1 class="author">涯无凌</h1>
-    
-      <h2 class="author-subtitle">一枚渣渣前端工程师</h2>
-    
+    <div class="header-desc-left">
+      <h1 class="author">涯无凌</h1>
+      
+        <h2 class="author-subtitle">一枚渣渣前端工程师</h2>
+      
+    </div>
+    <div class="header-desc-right">
+      <div class="header-site">
+        
+          <a class="header-site-item" href="https://github.com/yawuling" title="github">
+            <i class="iconfont icon-github"></i>
+          </a>
+        
+        
+      </div>
+    </div>
   </div>
 </header>
 
@@ -92,7 +106,7 @@
           <div class="archive-date"><h3>vue</h3></div>
 
   <div class="archive-item">
-    <div class="archive-item-date">2017-07-24</div>
+    <div class="archive-item-date">2017-07-27</div>
     <div class="archive-item-title">
       <a href="/201707240917.html">Framework7+Framework7-vue+vue踩坑记（三）</a>
     </div>
@@ -238,6 +252,21 @@
     <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a> and <a href="https://github.com/" style="font-weight: bold">Github</a></p>
   </div>
 </div>
+
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
   </div>
   <script src="/js/jquery-3.2.1.min.js"></script>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ywulin.com/"/>
-  <updated>2017-07-27T03:16:50.901Z</updated>
+  <updated>2017-07-27T05:59:46.990Z</updated>
   <id>http://blog.ywulin.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Framework7+Framework7-vue+vue踩坑记（三）</title>
     <link href="http://blog.ywulin.com/201707240917.html"/>
     <id>http://blog.ywulin.com/201707240917.html</id>
-    <published>2017-07-24T01:17:19.000Z</published>
-    <updated>2017-07-27T03:16:50.901Z</updated>
+    <published>2017-07-27T02:17:19.000Z</published>
+    <updated>2017-07-27T05:59:46.990Z</updated>
     
     <content type="html"><![CDATA[<p>接上一篇博客“Framework7+Framework7-vue+vue踩坑记（二）”，这里继续 <code>framework7</code> + <code>vue</code> + <code>framework7-vue</code> 踩坑第三波。</p>
 <a id="more"></a>

@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://blog.ywulin.com/201707240917.html">
 <meta property="og:site_name" content="涯无凌">
 <meta property="og:description" content="接上一篇博客“Framework7+Framework7-vue+vue踩坑记（二）”，这里继续 framework7 + vue + framework7-vue 踩坑第三波。">
-<meta property="og:updated_time" content="2017-07-27T03:16:50.901Z">
+<meta property="og:updated_time" content="2017-07-27T05:59:46.990Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Framework7+Framework7-vue+vue踩坑记（三）">
 <meta name="twitter:description" content="接上一篇博客“Framework7+Framework7-vue+vue踩坑记（二）”，这里继续 framework7 + vue + framework7-vue 踩坑第三波。">
@@ -48,43 +48,57 @@
 
   <div id="container">
     <header id="header">
-  <div class="header-site">
-    
-      <a class="header-site-item" href="https://github.com/yawuling" title="github">
-        <i class="iconfont icon-github"></i>
-      </a>
-    
-    
+  <div class="header-top">
+    <div class="header-site">
+      
+        <a class="header-site-item" href="https://github.com/yawuling" title="github">
+          <i class="iconfont icon-github"></i>
+        </a>
+      
+      
+    </div>
+    <nav class="header-nav">
+      
+        <a class="nav-item js-transition-hover" href="/">
+          <span>首页</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+        <a class="nav-item js-transition-hover" href="/archives">
+          <span>归档</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+        <a class="nav-item js-transition-hover" href="/about">
+          <span>关于</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+      
+        <a class="nav-item js-transition-hover" href="/atom.xml">
+          <span>订阅</span>
+          <i class="nav-item-bottom js-transition-bottom"></i>
+        </a>
+      
+    </nav>
   </div>
-  <nav class="header-nav">
-    
-      <a class="nav-item js-transition-hover" href="/">
-        <span>首页</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-      <a class="nav-item js-transition-hover" href="/archives">
-        <span>归档</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-      <a class="nav-item js-transition-hover" href="/about">
-        <span>关于</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-    
-      <a class="nav-item js-transition-hover" href="/atom.xml">
-        <span>订阅</span>
-        <i class="nav-item-bottom js-transition-bottom"></i>
-      </a>
-    
-  </nav>
   <div class="header-desc">
-    <h1 class="author">涯无凌</h1>
-    
-      <h2 class="author-subtitle">一枚渣渣前端工程师</h2>
-    
+    <div class="header-desc-left">
+      <h1 class="author">涯无凌</h1>
+      
+        <h2 class="author-subtitle">一枚渣渣前端工程师</h2>
+      
+    </div>
+    <div class="header-desc-right">
+      <div class="header-site">
+        
+          <a class="header-site-item" href="https://github.com/yawuling" title="github">
+            <i class="iconfont icon-github"></i>
+          </a>
+        
+        
+      </div>
+    </div>
   </div>
 </header>
 
@@ -98,7 +112,7 @@
       <div class="post-meta-l">
         <div class="post-date">
           <i class="iconfont icon-riqi"></i>
-          <span>2017-07-24</span>
+          <span>2017-07-27</span>
         </div>
         
           <span class="post-meta-line">|</span>
@@ -360,6 +374,21 @@
     <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a> and <a href="https://github.com/" style="font-weight: bold">Github</a></p>
   </div>
 </div>
+
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
   </div>
   <script src="/js/jquery-3.2.1.min.js"></script>
