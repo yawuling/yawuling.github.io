@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ywulin.com/"/>
-  <updated>2017-09-11T11:57:57.178Z</updated>
+  <updated>2017-09-11T13:21:52.543Z</updated>
   <id>http://blog.ywulin.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.ywulin.com/201709102311.html"/>
     <id>http://blog.ywulin.com/201709102311.html</id>
     <published>2017-09-11T10:40:55.000Z</published>
-    <updated>2017-09-11T11:57:57.178Z</updated>
+    <updated>2017-09-11T13:21:52.543Z</updated>
     
     <content type="html"><![CDATA[<p>目前前端的技术很多，范围也很广，在这篇博客就我目前所知道的前端技术做个汇总，有些我也还没看过，在这里不会细谈，你可以把这个当做成一个前端技术导航，这篇博客会持续更新下去</p>
 <a id="more"></a>
@@ -204,7 +204,7 @@
 <li><p><em>ES6</em> : ES6 标准提供了模块的定义，使用<code>export</code>导出模块的内容，使用<code>import</code>引入想要使用的模块</p>
 </li>
 </ul>
-<h6 id="17、浏览器本地存储"><a href="#17、浏览器本地存储" class="headerlink" title="17、浏览器本地存储"></a>17、浏览器本地存储</h6><ul>
+<h5 id="17、浏览器本地存储"><a href="#17、浏览器本地存储" class="headerlink" title="17、浏览器本地存储"></a>17、浏览器本地存储</h5><ul>
 <li><p><em>localstorage</em> : 没有时间限制的数据存储，一般浏览器支持的是 5M 大小，以键值对的形式存储</p>
 </li>
 <li><p><em>sessionstorage</em> : 针对一个 session 的数据存储，只存在于当前会话，页面关闭或者浏览器关闭即消失</p>
