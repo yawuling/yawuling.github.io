@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ywulin.com/"/>
-  <updated>2017-07-27T05:59:46.990Z</updated>
+  <updated>2017-09-11T11:57:57.178Z</updated>
   <id>http://blog.ywulin.com/</id>
   
   <author>
@@ -14,6 +14,264 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端技术汇总/导航</title>
+    <link href="http://blog.ywulin.com/201709102311.html"/>
+    <id>http://blog.ywulin.com/201709102311.html</id>
+    <published>2017-09-11T10:40:55.000Z</published>
+    <updated>2017-09-11T11:57:57.178Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前前端的技术很多，范围也很广，在这篇博客就我目前所知道的前端技术做个汇总，有些我也还没看过，在这里不会细谈，你可以把这个当做成一个前端技术导航，这篇博客会持续更新下去</p>
+<a id="more"></a>
+<blockquote>
+<p>这里把分成前端和后端（Node），如果有什么地方讲的不对，欢迎指教，谢谢</p>
+</blockquote>
+<h4 id="一、前端"><a href="#一、前端" class="headerlink" title="一、前端"></a>一、前端</h4><hr>
+<h5 id="1、ECMAScript"><a href="#1、ECMAScript" class="headerlink" title="1、ECMAScript"></a>1、ECMAScript</h5><ul>
+<li><em><a href="http://es6.ruanyifeng.com/#docs/intro" target="_blank" rel="external">ECMAScript</a></em> : JavaScript 的标准，目前已发布到 ECMAScript 2017 了（这三年一年发布一个版本，除了 ES6 更新幅度很大，后面的两个版本都只是新增了部分语法或语法糖），文档是阮一峰老师写的<a href="http://es6.ruanyifeng.com/#docs/intro" target="_blank" rel="external">《ECMAScript 6 入门》</a>，讲的很详细，持续更新中，另外 babel 这里给的 <a href="http://babeljs.cn/docs/learn-es2015/" target="_blank" rel="external">文档</a> 比较简短，适合查询用</li>
+</ul>
+<h5 id="2、Babel，让你使用下一代-JavaScript-标准"><a href="#2、Babel，让你使用下一代-JavaScript-标准" class="headerlink" title="2、Babel，让你使用下一代 JavaScript 标准"></a>2、Babel，让你使用下一代 JavaScript 标准</h5><ul>
+<li><em><a href="http://babeljs.io/" target="_blank" rel="external">Babel</a></em> : 由于 ECMAScript 的新语法有些在浏览器上还没有被实现，所以 Babel 诞生了，它可以让你使用最新的 JavaScript 标准，并帮你自动将其转换为 ES5</li>
+</ul>
+<h5 id="3、JavaScript-转译语言"><a href="#3、JavaScript-转译语言" class="headerlink" title="3、JavaScript 转译语言"></a>3、JavaScript 转译语言</h5><ul>
+<li><em><a href="http://coffee-script.org/" target="_blank" rel="external">CoffeeScript</a></em> : 一门编译到 JavaScript 的小巧语言</li>
+<li><em><a href="https://www.tslang.cn/" target="_blank" rel="external">TypeScript</a></em> : 微软开发的一种编程语言，是 JavaScript 的一个超集，扩展了 JavaScript 的语法</li>
+</ul>
+<h5 id="4、强大的构建工具"><a href="#4、强大的构建工具" class="headerlink" title="4、强大的构建工具"></a>4、强大的构建工具</h5><blockquote>
+<p>如果你还在自己手动地重复检查，合并，压缩，格式化文件，刷新浏览器这些枯燥的工作，那么你可以来尝试一下构建工具（选择自己喜欢的就好）</p>
+</blockquote>
+<ul>
+<li><p><em><a href="https://rollupjs.org/" target="_blank" rel="external">rollup</a></em> : 中文文档 <a href="https://rollupjs.org/zh" target="_blank" rel="external">点击这里</a></p>
+</li>
+<li><p><em><a href="https://gruntjs.com/" target="_blank" rel="external">Grunt</a></em> : 中文文档 <a href="http://www.gruntjs.net/" target="_blank" rel="external">点击这里</a></p>
+</li>
+<li><p><em><a href="https://gulpjs.com/" target="_blank" rel="external">Gulp</a></em> : 中文文档 <a href="http://www.gulpjs.com.cn/" target="_blank" rel="external">点击这里</a></p>
+</li>
+<li><p><em><a href="https://webpack.js.org/" target="_blank" rel="external">webpack</a></em> : 中文文档 <a href="https://webpack-china.org/" target="_blank" rel="external">点击这里</a></p>
+</li>
+<li><p><em><a href="http://browserify.org/" target="_blank" rel="external">Browserify</a></em></p>
+</li>
+</ul>
+<h5 id="5、ESlint-JS代码检测"><a href="#5、ESlint-JS代码检测" class="headerlink" title="5、ESlint JS代码检测"></a>5、<em><a href="http://eslint.cn/" target="_blank" rel="external">ESlint</a></em> JS代码检测</h5><blockquote>
+<p>ESlint 定义了一套代码风格的规则，使用它可以让你的代码更具有可读性，适用于团队合作，以下是目前比较流行的两套 ESlint 标准</p>
+</blockquote>
+<ul>
+<li><p><em><a href="https://standardjs.com/" target="_blank" rel="external">standard style</a></em></p>
+</li>
+<li><p><em><a href="http://airbnb.io/javascript/" target="_blank" rel="external">Airbnb JavaScript Style Guide</a></em></p>
+</li>
+</ul>
+<h5 id="6、stylelint，css-代码检测"><a href="#6、stylelint，css-代码检测" class="headerlink" title="6、stylelint，css 代码检测"></a>6、stylelint，css 代码检测</h5><ul>
+<li><em><a href="https://stylelint.io/" target="_blank" rel="external">stylelint</a></em> : 一个强大的现代 css 检测器，可以让你在样式表中遵循一致的约定和避免错误，中文文档 <a href="http://stylelint.cn/" target="_blank" rel="external">点击这里</a></li>
+</ul>
+<h5 id="7、不可缺少的测试"><a href="#7、不可缺少的测试" class="headerlink" title="7、不可缺少的测试"></a>7、不可缺少的测试</h5><blockquote>
+<p>一个项目，一个工具，一个插件，如果你不做测试，那么其稳定性无法保证</p>
+</blockquote>
+<ul>
+<li><p><em><a href="http://karma-runner.github.io/1.0/index.html" target="_blank" rel="external">karma</a></em> : 测试管理工具</p>
+</li>
+<li><p><em><a href="http://mochajs.org/" target="_blank" rel="external">mocha</a></em> : 单元测试框架，可跟 karma 结合</p>
+</li>
+<li><p><em><a href="https://jasmine.github.io/" target="_blank" rel="external">jasmine</a></em> : 单元测试框架，可跟 karma 结合</p>
+</li>
+<li><p><em><a href="http://nightwatchjs.org/" target="_blank" rel="external">Nightwatch</a></em> : 端对端测试框架，模拟用户行为的测试</p>
+</li>
+<li><p><em><a href="http://casperjs.org/" target="_blank" rel="external">CasperJS</a></em> : 端对端测试框架，基于 PhantomJS</p>
+</li>
+<li><p><em><a href="http://www.protractortest.org/#/" target="_blank" rel="external">Protractor</a></em> : AngularJS 的端对端测试框架</p>
+</li>
+</ul>
+<h5 id="8、优秀的-JavaScript-代码库-——-Jquery-amp-amp-Zepto"><a href="#8、优秀的-JavaScript-代码库-——-Jquery-amp-amp-Zepto" class="headerlink" title="8、优秀的 JavaScript 代码库 —— Jquery &amp;&amp; Zepto"></a>8、优秀的 JavaScript 代码库 —— Jquery &amp;&amp; Zepto</h5><ul>
+<li><p><em><a href="http://api.jquery.com/" target="_blank" rel="external">Jquery</a></em> : 提供了一系列方便的 api ，包含选择器，Dom 处理，JS 动画，事件处理等，兼容性好。个人喜欢使用这个 <a href="http://jquery.cuishifeng.cn/" target="_blank" rel="external">文档</a> ，一个 Jquery 速查表</p>
+</li>
+<li><p><em><a href="http://www.zeptojs.cn/" target="_blank" rel="external">Zepto</a></em> : Zepto 是一个更轻量级的代码库，保留了 Jquery 的大部分 api 名字，同时对移动端做了适配，适合用于移动端开发</p>
+</li>
+</ul>
+<h5 id="9、Web框架"><a href="#9、Web框架" class="headerlink" title="9、Web框架"></a>9、Web框架</h5><blockquote>
+<p>这几个框架中我目前就用到了 Vue，React 正在学习，其他的尚未使用，这里我会对 Vue 的篇幅多一点，抱歉，若有什么讲的不对的，请帮忙指正</p>
+</blockquote>
+<ul>
+<li><p><em><a href="https://cn.vuejs.org/" target="_blank" rel="external">Vue</a></em> : 尤雨溪大大开发的一个轻量的 MVVM 框架，目前在国内很火，很多大厂也开始用 Vue 重构项目了</p>
+<blockquote>
+<p>Vue 社区 : <a href="https://www.vue-js.com/" target="_blank" rel="external">https://www.vue-js.com/</a> ，可在这里寻找开源项目练手<br>github上面基于 Vue 的项目 : <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="external">https://github.com/vuejs/awesome-vue</a></p>
+</blockquote>
+<ul>
+<li><p>Vue 全家桶</p>
+<ul>
+<li><a href="https://router.vuejs.org/zh-cn/" target="_blank" rel="external">Vue-Router</a> : Vue 官方路由插件</li>
+<li><a href="https://vuex.vuejs.org/zh-cn/" target="_blank" rel="external">Vuex</a> : Vue 官方状态管理插件</li>
+<li><a href="https://www.npmjs.com/package/axios" target="_blank" rel="external">axios</a> : Vue 官方推荐 HTTP 客户端</li>
+</ul>
+</li>
+<li><p>基于 Vue 的 UI 组件库</p>
+<ul>
+<li><a href="http://mint-ui.github.io/#!/zh-cn" target="_blank" rel="external">Mint-UI</a> : 饿了么开源的一个适用于移动端的 UI 组件库，样式简洁</li>
+<li><a href="http://www.muse-ui.org/" target="_blank" rel="external">Muse-UI</a> : 一款运用了 Google 的 Material Design 设计理念的UI组件库</li>
+<li><a href="http://vue-material.com/#/" target="_blank" rel="external">Vue-Material</a> : 一款运用了 Google 的 Material Design 设计理念的UI组件库</li>
+<li><a href="https://vux.li/#/" target="_blank" rel="external">Vux</a> : 基于微信开源的 WeUI 进行开发的一套 Vue 组件库，封装好了微信的 jssdk，很适合开发用于微信的移动端网页</li>
+<li><a href="http://element.eleme.io/#/" target="_blank" rel="external">Element UI</a> : 饿了么开源的 Vue 组件库，比较适合用于 PC 端网页的开发</li>
+</ul>
+<blockquote>
+<p>除了以上所列出的组件库，还有其他不少优秀的组件库，这里不再陈列了</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><em><a href="https://facebook.github.io/react/" target="_blank" rel="external">React</a></em> : Facebook 开源的一款用于 UI 的 JS 库，社区很活跃，语法不多（相比较于 Vue），性能出众，代码逻辑非常简单（套用阮一峰老师的话），中文文档 <a href="https://doc.react-china.org/" target="_blank" rel="external">点击这里</a></p>
+</li>
+<li><p><em><a href="https://angularjs.org/" target="_blank" rel="external">Angular</a></em> : Google 开发的一个 MVVM 框架，曾经的 AngualarJS 1.0 其 watcher 越多会导致项目越慢，它使用了脏检查循环。你会发现 Vue 的一些语法跟 Angular 很像，因为 Angular 是 Vue 早期开发的灵感来源。现在 AngularJS 已经升级到2.0了，代码优化了不少，性能也改进了</p>
+</li>
+</ul>
+<blockquote>
+<p>以上框架的对比，详细查看 <a href="https://cn.vuejs.org/v2/guide/comparison.html" target="_blank" rel="external">https://cn.vuejs.org/v2/guide/comparison.html</a> ，至于选择哪种框架看个人喜好，没有什么最好的，只有最适合自己的</p>
+</blockquote>
+<ul>
+<li><em><a href="https://cycle.js.org/" target="_blank" rel="external">CycleJS</a></em> : 一个函数式和响应式的 JavaScript 框架，编写可观测代码</li>
+</ul>
+<h5 id="10、css-预处理器，提高你工作效率的好工具"><a href="#10、css-预处理器，提高你工作效率的好工具" class="headerlink" title="10、css 预处理器，提高你工作效率的好工具"></a>10、css 预处理器，提高你工作效率的好工具</h5><blockquote>
+<p>css 预处理器的思想是用一种专门的编程语言来编写样式表，之后再将其编译成 css 文件</p>
+</blockquote>
+<ul>
+<li><p><em><a href="http://sass-lang.com/" target="_blank" rel="external">Sass / Scss</a></em> : 基于 Ruby 编译，Scss 是Sass 3 引入的新的语法，兼容 CSS3，并继承了 Sass 的功能，Scss 语法对 css 友好，目前说 Sass，基本用的是 Scss 语法，插件也基本都是面向 Scss 的。编译的时候得安装 Ruby，或者使用 <a href="http://koala-app.com/index-zh.html" target="_blank" rel="external">koala</a> 这个工具，如果你是使用 webpack 等打包工具的话，有对应的插件可以使用，VScode 等编辑器也有对应的插件。中文文档 <a href="https://sass-guidelin.es/zh/" target="_blank" rel="external">点击这里</a></p>
+</li>
+<li><p><em><a href="http://lesscss.org/" target="_blank" rel="external">Less</a></em> : 基于 node 编译的预处理器，语法没 sass 那么多，但用起来也比较舒服，看个人喜欢了。</p>
+</li>
+<li><p><em><a href="http://www.zhangxinxu.com/jq/stylus/" target="_blank" rel="external">Stylus</a></em> : 基于 node 编译的 css 预处理器，语法很强大，语法点多，写法有多种，很自由，在我制作 Hexo 博客主题的时候使用了其部分语法，刚学的时候可能无法驾驭住</p>
+</li>
+</ul>
+<blockquote>
+<p>以上预处理器各有优缺点，至于选择哪一种，同样的没有最好的，只有最适合自己的</p>
+</blockquote>
+<h5 id="11、Web-app"><a href="#11、Web-app" class="headerlink" title="11、Web app"></a>11、Web app</h5><blockquote>
+<p>运行于移动端网页上，具备移动 App 的部分特点，即使用网页实现的 App，但不具备调用所有手机底层 api 的能力（曾经我有段时间将 web app 理解成了 hybrid app），以下介绍部分能用于开发 web app 的框架，部分使用过的框架会篇幅多一点</p>
+</blockquote>
+<ul>
+<li><p><em>Vue + Vue-router + Vuex + axios( + UI组件库)</em> : Vue 的官方插件 Vue-router 可以实现路由跳转，Vuex可以用于存储登录状态等，axios 获取数据，再加上UI组件库可以帮你方便地构建出一款webapp，Vue 的<code>transition</code>标签可以实现路由跳转动画。这里使用了前后端分离的思想，了解前后端分离，请走传送门：<a href="https://www.itcodemonkey.com/article/140.html" target="_blank" rel="external">前后端分离</a>。登录状态安全性请去了解<code>Token</code>机制和 web本地存储（本地存储下面会简单介绍一下）</p>
+</li>
+<li><p><em><a href="http://jquerymobile.com/" target="_blank" rel="external">Jquery mobile</a></em> : Jquery 框架的一个组件</p>
+</li>
+<li><p><em><a href="http://frozenui.github.io/" target="_blank" rel="external">Frozen UI</a></em> : 一个开源的简单易用，轻量快捷的移动端UI框架。基于手Q样式规范，选取最常用的组件，做成手Q公用离线包减少请求，升级方式友好，文档完善，目前全面应用在腾讯手Q增值业务中（官方原话）</p>
+</li>
+<li><p><em><a href="http://ionicframework.com/docs/" target="_blank" rel="external">ionic</a></em> : 基于 Sass 和 Angular 的一个开源组件库，官方文档需要翻墙访问，可以阅读中文文档 <a href="http://www.ionic.wang/js_doc-index.html" target="_blank" rel="external">点击这里</a></p>
+</li>
+<li><p><em><a href="http://amazeui.org/getting-started?_ver=2.x" target="_blank" rel="external">Amaze UI</a></em> : 一个轻量级的用于移动端的框架</p>
+</li>
+<li><p><em><a href="http://framework7.io/docs/" target="_blank" rel="external">Framework7</a></em> : 淘宝开源的一个移动端组件库，分 IOS 样式和 Android 样式，它的理念是致力于打造接近原生的体验，实现了 IOS 的侧滑返回功能，所以很逼近 IOS 原生体验，它构建了一个轻量的 Jquery 语法框架，并基于其进行开发。该框架同时有适配 Vue 的 Framework7-Vue 和适配 React 的 Framework7-React，关于 Framework7-Vue，我用它重构了 Framework7 官网的 demo，github 的地址在这：<a href="https://github.com/yawuling/vue-framework7" target="_blank" rel="external">vue-framework7</a>，并对其遇到的一些问题写了几篇博客，请走 <a href="http://blog.ywulin.com/tags/framework7/">传送门</a><br>（Framework7 的文档分了好几个域名展示，每个文档的更新程度不一致，以上所展示的地址是一直保持着最新内容，其他链接目前没有更新了）</p>
+</li>
+</ul>
+<blockquote>
+<p>webapp 的框架很多，你可以自己去搜索，以上就只列了部分而已</p>
+</blockquote>
+<h5 id="12、Hybrid-App"><a href="#12、Hybrid-App" class="headerlink" title="12、Hybrid App"></a>12、Hybrid App</h5><blockquote>
+<p>Hybrid App ，译为混合 App，即部分地方采用原生，部分地方使用 web app，现在有很多 App 都采用这种开发模式，web app可以一套代码适用 IOS 和 Android 双平台，所以开发周期快，比如手Q就是这种开发模式，上面陈列的 web app 在外面包个壳就可以打包成 App 了</p>
+</blockquote>
+<ul>
+<li><p><em><a href="http://cordova.apache.org/" target="_blank" rel="external">Cordova</a></em> : 一个 web app 打包工具，是 Phonegap 捐赠给 Apache 后使用的项目名，它给 web 提供了一个 web 容器供其运行，官方提供了调用手机底层 Api 插件，能实现多端打包，此外还有不少用户开发封装的第三方插件，以上提及的 web app 框架基本可用该工具打包成 App</p>
+</li>
+<li><p><em>Angular + ionic + phonegap</em> : 目前比较流行的 Hybrid App 开发技术选型，ionic 提供了很多方便好用的功能</p>
+</li>
+<li><p><em>Vue + Framework7-Vue + Cordova</em> : Vue 的 Hybrid App 之路比较短，目前没有常见的技术选型，以上是我实践过后的技术选型，在 IOS 上可以达到以假乱真的程度，在 Android 上的话还需要加上 <a href="https://crosswalk-project.org/" target="_blank" rel="external">crosswork</a> 这个工具，才不至于太卡，另外转场动画可能会比较单一（Vue 的 transition 在使用手机的返回时会重新执行一遍动画）</p>
+</li>
+<li><p><em><a href="http://www.html5plus.org/doc/zh_cn/accelerometer.html" target="_blank" rel="external">H5+</a> + <a href="http://dev.dcloud.net.cn/mui/" target="_blank" rel="external">MUI</a></em> :  H5+ 是 DCloud 提出的一套标准，它可以让我们使用 js 调用手机底层40万 api，api 使用起来简单，MUI 是官方配套的一套组件库，配合官方编辑器 Hbuilder 可以很方便地进行远程打包安装。2017年3月份我使用的时候它的社区还不是很完善，按照其他人的评价就是社区大多是张口问问题，但分享的却很少，现在不知道怎么样（这里我自觉惭愧，我也曾经当过其中的一员，后面项目结束后想着把遇到的问题的解决方案分享出来的，拖着拖着就已经把内容忘了）。总结起来就是用法很简单，但部分技术问题没有提供解决措施。</p>
+</li>
+</ul>
+<h5 id="13、使用前端技术来构建原生-App"><a href="#13、使用前端技术来构建原生-App" class="headerlink" title="13、使用前端技术来构建原生 App"></a>13、使用前端技术来构建原生 App</h5><blockquote>
+<p>以下都需要具备一定的原生知识</p>
+</blockquote>
+<ul>
+<li><p><em><a href="https://facebook.github.io/react-native/" target="_blank" rel="external">React Native</a></em> : 按照我的理解，React Native 是使用 React 的写法去调用原生组件，只不过 React 是调用 Html 标签，虽然说 React Native 可以用一套代码实现 IOS 和 Android 双端，但大多数时候还是得写两套代码。曾经 React Native 最大的优势是热更新（热更新这里自己去查，我没用过，也不怎么了解），不过目前已被苹果给禁了，基于 React Native 的项目依旧可以过审。React Native 社区是目前最活跃的，很多坑也已经被踩平了，可以放心用。</p>
+</li>
+<li><p><em><a href="http://weex.apache.org/" target="_blank" rel="external">Weex，又叫 Vue Native</a></em> : 阿里开源的一个基于 Vue 语法的框架，一套代码使用于 PC，App，Web 三端，2017年发布的，目前文档还在完善中，社区还不活跃，Vue 的开发者尤雨溪大大参与了该项目，并发布了一个用 weex 开发的 App</p>
+</li>
+<li><p><em><a href="https://www.nativescript.org/" target="_blank" rel="external">NativeScript</a></em> : 国外开发者自行发起的一个开源项目，所以没有大厂做靠背，它的理念是使用 JavaScript 构建原生，其定义了一系列标签，用于同时适配 IOS 和 Android，所以构建出来的项目就是原生，不过目前标签还不完善，部分组件还未实现，它跟 Angular 和 Vue 不冲突，目前已有人实现了 NativeScript 和 Angular 和 Vue 的结合</p>
+</li>
+</ul>
+<h5 id="14、前端也能圆桌面程序梦"><a href="#14、前端也能圆桌面程序梦" class="headerlink" title="14、前端也能圆桌面程序梦"></a>14、前端也能圆桌面程序梦</h5><ul>
+<li><em><a href="https://electron.atom.io/" target="_blank" rel="external">Electron</a></em> : github 开源的一个打包工具，Atom 和 VSCode 都是用这个工具开发的，他可以将你编写的 web 打包成三端（Windows，Mac，Linux）的安装程序。该工具使用了 Chrome V8 引擎用于渲染界面，本身提供了一些 api，同时我们也可以使用 node 的 api。该工具有与 Vue 结合使用的初始化模块和文档，UI 框架可以选用 Element UI。中文文档 <a href="https://electron.org.cn/" target="_blank" rel="external">点击这里</a></li>
+</ul>
+<h5 id="15、前后端分离的数据模拟"><a href="#15、前后端分离的数据模拟" class="headerlink" title="15、前后端分离的数据模拟"></a>15、前后端分离的数据模拟</h5><ul>
+<li><em><a href="http://mockjs.com/" target="_blank" rel="external">MockJS</a></em> : 前后端分离的开发模式，前端与后端先约定好数据格式和 api，在后端 api 还没封装好时，我们可以使用 MockJS 生成随机数据进行开发，提高工作效率</li>
+</ul>
+<h5 id="16、JS-模块规范"><a href="#16、JS-模块规范" class="headerlink" title="16、JS 模块规范"></a>16、JS 模块规范</h5><blockquote>
+<p>在 ES6 还没出来之前，JS 在浏览器方面没有模块规范（后端 node 有 CommonJS 标准），以下是目前浏览器端的两个模块规范</p>
+</blockquote>
+<ul>
+<li><p><em><a href="https://github.com/amdjs/amdjs-api/wiki/AMD" target="_blank" rel="external">AMD</a></em> : 异步模块定义</p>
+</li>
+<li><p><em>CMD</em> : 大名远扬的玉伯提出的规范，并根据其标准写了个 <a href="http://yslove.net/seajs/" target="_blank" rel="external">sea.js</a> （CMD找不到官方文档）</p>
+</li>
+<li><p><em>ES6</em> : ES6 标准提供了模块的定义，使用<code>export</code>导出模块的内容，使用<code>import</code>引入想要使用的模块</p>
+</li>
+</ul>
+<h6 id="17、浏览器本地存储"><a href="#17、浏览器本地存储" class="headerlink" title="17、浏览器本地存储"></a>17、浏览器本地存储</h6><ul>
+<li><p><em>localstorage</em> : 没有时间限制的数据存储，一般浏览器支持的是 5M 大小，以键值对的形式存储</p>
+</li>
+<li><p><em>sessionstorage</em> : 针对一个 session 的数据存储，只存在于当前会话，页面关闭或者浏览器关闭即消失</p>
+</li>
+<li><p><em>cookie</em> : 有时间限制的数据存储</p>
+</li>
+<li><p><em>webSQL</em> : 本地关系型数据库，目前已不再更新，浏览器一般支持 5M</p>
+</li>
+<li><p><em>indexDB</em> : 本地非关系型数据库，浏览器一般支持 5M</p>
+</li>
+</ul>
+<h5 id="18、微信小程序"><a href="#18、微信小程序" class="headerlink" title="18、微信小程序"></a>18、微信小程序</h5><ul>
+<li><em><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/" target="_blank" rel="external">微信小程序</a></em> : 基于微信的程序，语法有点像 Vue</li>
+</ul>
+<h5 id="19、PWA"><a href="#19、PWA" class="headerlink" title="19、PWA"></a>19、PWA</h5><ul>
+<li><em><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="external">PWA</a></em> : 谷歌和百度联合推出的一门技术，能使你的 web app 表现得就像是 native mobile app （官方文档需要翻墙，这里可以访问简书作者 “短衣匹马” 的<a href="http://www.jianshu.com/p/4e9d14fcb9de" target="_blank" rel="external">译文</a>）</li>
+</ul>
+<h4 id="二、后端-Node"><a href="#二、后端-Node" class="headerlink" title="二、后端 Node"></a>二、后端 Node</h4><hr>
+<blockquote>
+<p>node 是后端的领域了，目前我了解的不多，暂时没有余力去成为全栈工程师，以下简单地罗列我所了解的</p>
+</blockquote>
+<h5 id="1、Node"><a href="#1、Node" class="headerlink" title="1、Node"></a>1、Node</h5><ul>
+<li><em><a href="https://nodejs.org/dist/latest-v8.x/docs/api/" target="_blank" rel="external">Node</a></em> : 使用 JavaScript 作为开发语言，并对其进行扩展，前端工程师能够快速入手，中文文档 <a href="http://nodejs.cn/api/" target="_blank" rel="external">点击这里</a></li>
+</ul>
+<h5 id="2、NPM"><a href="#2、NPM" class="headerlink" title="2、NPM"></a>2、NPM</h5><ul>
+<li><em><a href="https://www.npmjs.com/" target="_blank" rel="external">NPM</a></em> : node 的包管理工具，由于 npm 的仓库是架设在国外服务器上的，在国内下载速度慢，可以使用淘宝搭建的仓库，它实时保持着与官方仓库的一致，淘宝提供的包管理工具<code>cnpm</code>，安装依赖包的时候使用<code>cnpm</code>，构建项目的时候还是使用<code>npm</code></li>
+</ul>
+<h5 id="3、CommonJS-规范"><a href="#3、CommonJS-规范" class="headerlink" title="3、CommonJS 规范"></a>3、CommonJS 规范</h5><ul>
+<li><em>CommonJS</em> ： 是 node 提出的 JS 模块规范，使用<code>export</code>导出模块的内容，使用<code>require</code>引入想要使用的模块</li>
+</ul>
+<h5 id="4、web-后台框架"><a href="#4、web-后台框架" class="headerlink" title="4、web 后台框架"></a>4、web 后台框架</h5><ul>
+<li><p><em><a href="http://www.expressjs.com.cn/4x/api.html" target="_blank" rel="external">express</a></em> : 其针对 node 的 http 模块封装了一系列 api，将底层实现好了，它让我们不再需要自己去实现底层逻辑，只需要专注于业务的实现，express 同时也提供了 https 请求机制</p>
+</li>
+<li><p><em><a href="http://koa.bootcss.com/" target="_blank" rel="external">koa</a></em> : express 原班人马打造，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用，通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。koa 不在内核方法中绑定任何中间件，它仅仅提供了一个轻量优雅的函数库，使得编写 Web 应用变得得心应手。（取自koa中文文档）</p>
+</li>
+</ul>
+<h5 id="5、模板引擎"><a href="#5、模板引擎" class="headerlink" title="5、模板引擎"></a>5、模板引擎</h5><blockquote>
+<p>node 作为后端，返回给浏览器的是静态文件，它没有 Java 的 jsp 服务器页面，所以就有了模板引擎，通过 node 提供的 文件操作 api 读取文件的内容，然后将数据替换到对应的位置，模板引擎也可用于客户端开发，以下只罗列几个，更多的模板引擎请自行搜索</p>
+</blockquote>
+<ul>
+<li><p><em><a href="http://jade-lang.com/" target="_blank" rel="external">Jade</a></em> </p>
+</li>
+<li><p><em><a href="http://mustache.github.io/" target="_blank" rel="external">Mustache</a></em></p>
+</li>
+<li><p><em><a href="http://www.embeddedjs.com/" target="_blank" rel="external">EJS</a></em></p>
+</li>
+</ul>
+<h5 id="6、数据库"><a href="#6、数据库" class="headerlink" title="6、数据库"></a>6、数据库</h5><blockquote>
+<p>数据库我目前就了解 MongoDB 而已，以下也只列这一个</p>
+</blockquote>
+<ul>
+<li><em><a href="http://www.runoob.com/mongodb/mongodb-tutorial.html" target="_blank" rel="external">MongoDB</a></em> : 一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库（来自菜鸟教程）</li>
+</ul>
+<hr>
+<p>前端路漫漫，离全栈工程师还有一段路要走</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;目前前端的技术很多，范围也很广，在这篇博客就我目前所知道的前端技术做个汇总，有些我也还没看过，在这里不会细谈，你可以把这个当做成一个前端技术导航，这篇博客会持续更新下去&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端杂谈" scheme="http://blog.ywulin.com/tags/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>Framework7+Framework7-vue+vue踩坑记（三）</title>
