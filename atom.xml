@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ywulin.com/"/>
-  <updated>2017-09-11T13:21:52.543Z</updated>
+  <updated>2017-09-13T15:13:35.977Z</updated>
   <id>http://blog.ywulin.com/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>前端技术汇总/导航</title>
+    <title>前端技术就我目前已知的汇总</title>
     <link href="http://blog.ywulin.com/201709102311.html"/>
     <id>http://blog.ywulin.com/201709102311.html</id>
     <published>2017-09-11T10:40:55.000Z</published>
-    <updated>2017-09-11T13:21:52.543Z</updated>
+    <updated>2017-09-13T15:13:35.977Z</updated>
     
-    <content type="html"><![CDATA[<p>目前前端的技术很多，范围也很广，在这篇博客就我目前所知道的前端技术做个汇总，有些我也还没看过，在这里不会细谈，你可以把这个当做成一个前端技术导航，这篇博客会持续更新下去</p>
+    <content type="html"><![CDATA[<p>目前前端的技术很多，范围也很广，在这篇博客就我目前所知道的前端技术做个汇总，有些我也还没看过，在这里不会细谈，这篇博客会持续更新下去</p>
 <a id="more"></a>
 <blockquote>
 <p>这里把分成前端和后端（Node），如果有什么地方讲的不对，欢迎指教，谢谢</p>
@@ -264,7 +264,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;目前前端的技术很多，范围也很广，在这篇博客就我目前所知道的前端技术做个汇总，有些我也还没看过，在这里不会细谈，你可以把这个当做成一个前端技术导航，这篇博客会持续更新下去&lt;/p&gt;
+      &lt;p&gt;目前前端的技术很多，范围也很广，在这篇博客就我目前所知道的前端技术做个汇总，有些我也还没看过，在这里不会细谈，这篇博客会持续更新下去&lt;/p&gt;
     
     </summary>
     
