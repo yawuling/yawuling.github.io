@@ -708,6 +708,9 @@ html ::-webkit-scrollbar-track-piece {
 #footer .footer-count {
   margin-bottom: 10px;
 }
+#footer .footer-info {
+  margin-bottom: 10px;
+}
 #footer .footer-info p {
   display: inline-block;
   margin-right: 20px;
@@ -718,6 +721,17 @@ html ::-webkit-scrollbar-track-piece {
 }
 #footer .footer-info a:hover {
   text-decoration: underline;
+}
+#footer .filing a {
+  color: #444;
+  text-decoration: none;
+}
+#footer .filing a:hover {
+  color: #1296db;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
 #to-top {
   position: fixed;
